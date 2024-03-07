@@ -1,0 +1,297 @@
+
+*{
+  /* border: 1px solid black !important; */
+  box-sizing: border-box !important;
+}
+
+/*  VARIABLES  */
+
+:root{
+
+  --color-yellow-main: #FFF643;
+  --color-yellow-js: #F7DF1E;
+  --color-yellow-light: #FFF178;
+  --color-yellow-soft: #FAF1C1;
+
+  --color-black-oil: #0C0C0C;
+  --color-black-obsidian: #0B1215;
+  --color-black-night: #0B1215;
+
+  --color-gray-light: #F9F9F9;
+  --color-gray-light2: #E7E7E7;
+  --color-gray-yellowed: #DCE0C3;
+  --color-gray-brownie: #424834;
+
+  --font-main: 'Source Code Pro';
+  --font-alt: 'Oxygen Mono';
+  --font-sans-serif: 'Oxygen';
+
+}
+
+html{
+  font-family: 'Source Code Pro', 'Oxygen Mono', 'Oxygen', 'sans-serif';
+}
+
+h1{
+  font-size: 64px;
+  font-weight: bold;
+  margin: .5em 0;
+}
+
+h2{
+  font-size: 24px;
+  font-weight: bold;
+  margin: 1em 0;
+  position: relative;
+
+  &::after{
+    content: '';
+    width: 10%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+  }
+}
+
+h3{
+  margin: .5em 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+h4{
+  margin: .5em 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+h5{
+  margin: .5em 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+h6{
+  margin: .5em 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+p{
+  margin: 1em 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 150%;
+}
+
+p::selection, h2::selection, h3::selection, h4::selection, span::selection{
+  background-color: var(--color-yellow-js);
+}
+
+span{
+  font-size: 12px;
+  color: #424834;
+}
+
+a{
+  font-size: 14px;
+  color: #DEC81A;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a::selection{
+  background-color: black;
+}
+
+a:hover{
+  color: var(--color-yellow-light);
+  text-decoration: underline;
+}
+
+.wrap{
+  padding: 0 10%;
+  /* max-width: 1200px; */
+}
+
+.key{
+  font-family: 'Oxygen Mono';
+  font-size: 16px;
+  padding: 2px 6px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+
+button{
+  background-color: white;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: all .1s ease-in;
+}
+
+button:hover{
+  background-color: var(--color-yellow-js);
+}
+
+
+/* HEADER */
+
+header{
+  width: 100%;
+  background-color: var(--color-yellow-js);
+  height: 78px;
+}
+
+header .topNav{
+  margin: 0 auto;
+  padding: 0 10%;
+  width: 100%;
+  height: inherit;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .topNav .logoDCueto, header .topNav a{
+  height: 96%;
+}
+
+header .topNav ul{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+
+header .topNav .navItem a{
+  font-size: 14px;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  transition: all .2s ease-in-out;
+}
+
+header .topNav .navItem.active a{
+  border: 2px solid black;
+}
+
+header .topNav .navItem a:hover{
+  background-color: #000000;
+  border: 2px solid black;
+  color: white;
+}
+
+header .topNav i{
+  font-size: 18px;
+  margin: 0 8px;
+  cursor: pointer;
+  transition: all .1s ease-in;
+}
+
+header .topNav i:hover{
+  color: white;
+  font-size: 20px;
+}
+
+
+/*  HERO  */
+
+.hero{
+  padding: 50px 10%;
+  background-color: var(--color-yellow-main);
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero .dinamicRoleText{
+  width: 320px;
+  background-color: black;
+  color: white;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+.hero .dinamicRoleText p{
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.hero .commandInfo p{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.hero figure{
+  max-width: 300px;
+}
+
+.hero figure img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+
+/*  LATESTS ARTICLES  */
+
+.latestsArticles{
+  padding-top: 30px;
+  padding-bottom: 90px;
+}
+
+.latestsArticles .articlesContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3%;
+}
+
+.latestsArticles .blogPost{
+  max-width: 45%;
+  margin: 10px 0;
+  padding: 20px;
+}
+
+.latestsArticles .blogPost:hover{
+  background-color: var(--color-gray-light);
+}
+
+.latestsArticles button.loadMoreBtn{
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+/*  ABOUT ME  */
+
+.aboutMe{
+  background-color: #ECECEC;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
+
+
+/*  FOOTER  */
+
+
+footer{
+  text-align: center;
+  padding: 30px 0;
+  width: 100%;
+  background-color: var(--color-yellow-soft);
+}
+
+footer p{
+  font-weight: bold;
+  font-size: 14px;
+  margin: 20px 0;
+}
