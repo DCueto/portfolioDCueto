@@ -159,7 +159,7 @@ header .topNav{
   padding: 0 10%;
   width: 100%;
   height: inherit;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -169,7 +169,13 @@ header .topNav .logoDCueto, header .topNav a{
   height: 96%;
 }
 
-header .topNav ul{
+header .topNav .topRightNav{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+
+header .topNav .topRightNav ul{
   display: flex;
   justify-content: space-evenly;
   gap: 15px;
@@ -427,7 +433,7 @@ header .topNav i:hover{
 
 footer{
   text-align: center;
-  padding: 30px 0;
+  padding: 30px 10%;
   width: 100%;
   background-color: var(--color-yellow-soft);
 }
@@ -454,3 +460,11 @@ footer p{
   }
 }
 
+
+@media screen and ( width <= 500px ) {
+
+  header .topNav .topRightNav ul{
+    display: none !important;
+  }
+
+}
