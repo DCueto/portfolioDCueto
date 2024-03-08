@@ -8,10 +8,32 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Oxygen:wght@300;400;700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/13f6ec1123.js" crossorigin="anonymous"></script>
+  <script src="./lib/app.js"></script>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="modal hidden">
+    <nav class="modalNavigator">
+      <input type="text" id="modalSearch" placeholder="Inserta el comando o tu búsqueda" />
+      <div class="modalNavContent">
+        <ul>
+          <li class="modalNavItem">Home</li>
+          <li class="modalNavItem">Blog</li>
+          <li class="modalNavItem">Portfolio</li>
+          <li class="modalNavItem">Contacto</li>
+        </ul>
+        <h5>Blog Posts</h5>
+        <hr>
+        <ul>
+          <li class="modalNavItem">Post 1</li>
+          <li class="modalNavItem">Post 2</li>
+          <li class="modalNavItem">Post 3</li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
   <header>
     <nav class="topNav">
 
@@ -34,11 +56,11 @@
       <h1>Daniel <br>Cueto</h1>
 
       <div class="dinamicRoleText">
-        <p>Software Developer</p>
+        <p>Un <span id="dinamicLabel"></span><span class="cursor">&nbsp;</span></p>
       </div>
 
       <div class="commandInfo">
-        <p>Press <i class="commandIcon key">⌘</i> <span class="keyIcon key">B</span> to start</p>
+        <p>Presiona <i class="commandIcon key">⌘</i> <span class="keyIcon key">B</span> para empezar</p>
       </div>
     </div>
 
@@ -85,25 +107,25 @@
       </p>
     </section>
   
-    <section class="projects">
+    <section class="projects wrap">
       <h2>Proyectos</h2>
     </section>
   
-    <section class="workExperience">
+    <section class="workExperience wrap">
   
     </section>
   
-    <section class="education">
+    <section class="education wrap">
   
     </section>
   </main>
 
   <aside>
-    <section class="socialButtons">
+    <section class="socialButtons wrap">
 
     </section>
   
-    <section class="contactMe">
+    <section class="contactMe wrap">
   
     </section>
   </aside>
