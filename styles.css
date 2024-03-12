@@ -8,6 +8,7 @@
 
 :root{
 
+  /*  Colors  */
   --color-yellow-main: #FFF643;
   --color-yellow-js: #F7DF1E;
   --color-yellow-light: #FFF178;
@@ -24,15 +25,300 @@
   --color-gray-yellowed: #DCE0C3;
   --color-gray-brownie: #424834;
 
+  --color-gray-dark: #1D1E23;
+
+  /*  Fonts  */
   --font-main: 'Source Code Pro';
   --font-alt: 'Oxygen Mono';
   --font-sans-serif: 'Oxygen';
 
+
+  /*  Element Variables  */
+
+  --color-h2-underline: black;
+  --color-text-selection: var(--color-yellow-js);
+  --color-span-default: var(--color-gray-brownie);
+  --color-anchor-default: var(--color-yellow-darker);
+  --color-anchor-selection: black;
+  --color-anchor-hover: var(--color-yellow-light);
+  --color-text__default: black;
+  --color-text--bold-1: var(--color-yellow-darker);
+
+  /*  Key Component  */
+  --color-key-background: black;
+  --color-key-text: white;
+
+  /* Default Button Component */
+  --color-background__default-button--default: white;
+  --color-text__default-button--default: black;
+  --color-border__default-button--default: black;
+  --color-background__default-button--hover: var(--color-yellow-js);
+  --color-text__default-button--hover: black;
+  --color-border__default-button--hover: black;
+
+  /* Label 1 Component */
+  --color-background__label-1--default: #0B1215;
+  --color-text__label-1--default: var(--color-yellow-main);
+
+  /* Tabs Component */
+
+  --color-text__tab-rounded: white;
+  --color-border__tab-rounded: white;
+  --color-text__tab-rounded--hover: black;
+  --color-border__tab-rounded--hover: black;
+  --color-background__tab-rounded--hover: white;
+  --color-background__tab-rounded--active: var(--color-yellow-main);
+  --color-border__tab-rounded--active: black;
+  --color-text__tab-rounded-active: black;
+
+
+  /*  Header Colors  */
+
+  --color-background__header: var(--color-yellow-js);
+
+  --color-text__nav-item__anchor--active: black;
+  --color-text__nav-item__anchor--default: black;
+  --color-border__nav-item__anchor--hover: black;
+  --color-background__nav-item__anchor--hover: black;
+  --color-text__nav-item__anchor--hover: white;
+
+  --color-text__nav-item__icon--default: black;
+  --color-text__nav-item__icon--hover: white;
+
+  /*  Modal Colors  */
+  
+  --color-background__modal--outside-transparency: rgba(12, 12, 12, .3);
+  --color-background__modal--inner-transparency: rgba(12, 12, 12, .8);
+  --color-text__modal-navigator--default: white;
+  --color-text__modal-navigator__search-input: var(--color-gray-light3);
+  --color-text__modal-navigator__search-input--placeholder: var(--color-gray-light3);
+  --color-background__modal-navigator__search-input: rgba(12, 12, 12, .3);
+  --color-border__modal-navigator__search-input--focus: black;
+  --color-background__modal-navigator__modal-nav-item--hover: rgba(100, 100, 100, .3);
+
+  /*  Hero Colors  */
+
+  --color-background__hero: var(--color-yellow-main);
+  --color-text__hero: black;
+  --color-background__dinamic-role-text: black;
+  --color-text__dinamic-role-text: white;
+  --color-text__dinamic-label: var(--color-yellow-js);
+  --color-background__dinamic-role-text__cursor: #b0ff95;
+
+  --color-background__dinamic-role-text__cursor--keyframe1: var(--color-yellow-js);
+  --color-background__dinamic-role-text__cursor--keyframe2: transparent;
+  --color-background__dinamic-role-text__cursor--keyframe3: var(--color-yellow-js);
+
+  --color-background__command-info--hover: var(--color-yellow-soft);
+
+
+  /*  Latests Articles Colors  */
+
+  --color-background__latests-articles: white;
+  --color-background__blog-post--hover: var(--color-gray-light);
+  --color-text__blog-post--hover__h4: var(--color-yellow-darker);
+
+
+  /*  About Me / Projects Colors  */
+
+  --color-background__about-me: var(--color-gray-light3);
+  --color-background__projects: var(--color-gray-light3);
+  --color-text__project-details: white;
+  --color-background__project-details: var(--color-black-oil);
+  --color-background__project-card--transition: var(--color-yellow-main);
+  --color-text__project-card__h3: var(--color-yellow-js);
+  --color-background__project-card__h3: rgba(12, 12, 12, .7);
+
+
+  /*  Experience Colors  */
+
+  --color-background__experience-container: var(--color-black-oil);
+  --color-background__experience: white;
+  --color-border__experience-container: none;
+  --color-text__experience-container: white;
+  --color-text__experience__experience-roles: var(--color-yellow-main);
+  --color-text__experience__experience-roles__span: var(--color-yellow-light);
+  --color-background__experience-role__before: var(--color-yellow-main);
+  --color-background__experience-role__after: var(--color-yellow-main);
+
+
+  /*  Education Colors  */
+
+  --color-background__education: white;
+  --color-background__education-item-content__after: var(--color-black-night);
+  --color-background__education-item-content__before: var(--color-black-night);
+
+
+  /*  Social Buttons  */
+
+  --color-background__social-buttons: var(--color-gray-light3);
+  --color-background__social-button: blueviolet;
+  --color-text__social-button: white;
+  --color-background__social-button: transparent;
+  --color-background__social-button--hover: transparent;
+  --color-background__social-button-content: blue;
+  --color-background__social-button--shadow: black;
+  --color-background__social-button--linkedin: #0B65C2;
+  --color-background__social-button--web: #5B5D88;
+  --color-background__social-button--github: #222429;
+  --color-background__social-button--x: #0C0C0C;
+  --color-text__social-button__span: white;
+
+
+  /*  Footer  */
+
+  --color-background__footer: var(--color-yellow-soft);
+  --color-text__footer: black;
+}
+
+/* -----------  DARK MODE ------------ */
+
+:root.dark-theme{
+  /* --main-brand-color: #FFF643;
+  --secondary-brand-color: #F7DF1E; */
+
+  /*  Element Variables  */
+
+  --color-h2-underline: white;
+  --color-text-selection: var(--color-yellow-js);
+  --color-span-default: var(--color-gray-light3);
+  --color-anchor-default: var(--color-yellow-darker);
+  --color-anchor-selection: black;
+  --color-anchor-hover: var(--color-yellow-light);
+  --color-text__default: white;
+  --color-text--bold-1: var(--color-yellow-js);
+
+  /*  Key Component  */
+  --color-key-background: black;
+  --color-key-text: white;
+
+  /* Default Button Component */
+  --color-background__default-button--default: black;
+  --color-text__default-button--default: white;
+  --color-border__default-button--default: white;
+  --color-background__default-button--hover: var(--color-yellow-js);
+  --color-text__default-button--hover: black;
+  --color-border__default-button--hover: black;
+
+  /* Label 1 Component */
+  --color-background__label-1--default: var(--color-yellow-main);
+  --color-text__label-1--default: var(--color-black-oil);
+
+  /* Tabs Component */
+
+  --color-text__tab-rounded: white;
+  --color-border__tab-rounded: white;
+  --color-text__tab-rounded--hover: black;
+  --color-border__tab-rounded--hover: black;
+  --color-background__tab-rounded--hover: white;
+  --color-background__tab-rounded--active: var(--color-yellow-main);
+  --color-border__tab-rounded--active: black;
+  --color-text__tab-rounded-active: black;
+
+
+  /*  Header Colors  */
+
+  --color-background__header: var(--color-yellow-js);
+
+  --color-text__nav-item__anchor--active: black;
+  --color-text__nav-item__anchor--default: black;
+  --color-border__nav-item__anchor--hover: black;
+  --color-background__nav-item__anchor--hover: black;
+  --color-text__nav-item__anchor--hover: white;
+
+  --color-text__nav-item__icon--default: black;
+  --color-text__nav-item__icon--hover: white;
+
+  /*  Modal Colors  */
+  
+  --color-background__modal--outside-transparency: rgba(12, 12, 12, .3);
+  --color-background__modal--inner-transparency: rgba(12, 12, 12, .8);
+  --color-text__modal-navigator--default: white;
+  --color-text__modal-navigator__search-input: var(--color-gray-light3);
+  --color-text__modal-navigator__search-input--placeholder: var(--color-gray-light3);
+  --color-background__modal-navigator__search-input: rgba(12, 12, 12, .3);
+  --color-border__modal-navigator__search-input--focus: black;
+  --color-background__modal-navigator__modal-nav-item--hover: rgba(100, 100, 100, .3);
+
+  /*  Hero Colors  */
+
+  --color-background__hero: var(--color-yellow-main);
+  --color-text__hero: black;
+  --color-background__dinamic-role-text: black;
+  --color-text__dinamic-role-text: white;
+  --color-text__dinamic-label: var(--color-yellow-js);
+  --color-background__dinamic-role-text__cursor: #b0ff95;
+
+  --color-background__dinamic-role-text__cursor--keyframe1: var(--color-yellow-js);
+  --color-background__dinamic-role-text__cursor--keyframe2: transparent;
+  --color-background__dinamic-role-text__cursor--keyframe3: var(--color-yellow-js);
+
+  --color-background__command-info--hover: #F4DC1B;
+
+
+  /*  Latests Articles Colors  */
+
+  --color-background__latests-articles: var(--color-black-obsidian);
+  --color-background__blog-post--hover: var(--color-gray-dark);
+  --color-text__blog-post--hover__h4: var(--color-yellow-darker);
+
+
+  /*  About Me / Projects Colors  */
+
+  --color-background__about-me: var(--color-gray-dark);
+  --color-background__projects: var(--color-gray-dark);
+  --color-text__project-details: white;
+  --color-background__project-details: var(--color-black-oil);
+  --color-background__project-card--transition: var(--color-yellow-main);
+  --color-text__project-card__h3: var(--color-yellow-js);
+  --color-background__project-card__h3: rgba(12, 12, 12, .7);
+
+
+  /*  Experience Colors  */
+
+  --color-background__experience: var(--color-black-oil);
+  --color-background__experience-container: var(--color-black-oil);
+  --color-border__experience-container: white;
+  --color-text__experience-container: white;
+  --color-text__experience__experience-roles: var(--color-yellow-main);
+  --color-text__experience__experience-roles__span: var(--color-yellow-light);
+  --color-background__experience-role__before: var(--color-yellow-main);
+  --color-background__experience-role__after: var(--color-yellow-main);
+
+
+  /*  Education Colors  */
+
+  --color-background__education: var(--color-black-oil);
+  --color-background__education-item-content__after: var(--color-yellow-main);
+  --color-background__education-item-content__before: var(--color-yellow-main);
+
+
+  /*  Social Buttons  */
+
+  --color-background__social-buttons: var(--color-gray-dark);
+  --color-background__social-button: blueviolet;
+  --color-text__social-button: white;
+  --color-background__social-button: transparent;
+  --color-background__social-button--hover: transparent;
+  --color-background__social-button-content: blue;
+  --color-background__social-button--shadow: black;
+  --color-background__social-button--linkedin: #0B65C2;
+  --color-background__social-button--web: #5B5D88;
+  --color-background__social-button--github: #222429;
+  --color-background__social-button--x: #0C0C0C;
+  --color-text__social-button__span: white;
+
+
+  /*  Footer  */
+
+  --color-background__footer: var(--color-yellow-main);
+  --color-text__footer: black;
 }
 
 html{
   font-family: 'Source Code Pro', 'Oxygen Mono', 'Oxygen', 'sans-serif';
   font-size: 16px;
+  color: var(--color-text__default);
 }
 
 h1{
@@ -51,7 +337,7 @@ h2{
     content: '';
     width: 10%;
     height: 0.18rem;
-    background-color: black;
+    background-color: var(--color-h2-underline);
     position: absolute;
     bottom: -0.375rem;
     left: 0;
@@ -91,27 +377,27 @@ p{
 }
 
 p::selection, h2::selection, h3::selection, h4::selection, span::selection{
-  background-color: var(--color-yellow-js);
+  background-color: var(--color-text-selection);
 }
 
 span{
   font-size: 0.75rem;
-  color: #424834;
+  color: var(--color-span-default);
 }
 
 a{
   font-size: 0.875rem;
-  color: var(--color-yellow-darker);
+  color: var(--color-anchor-default);
   font-weight: bold;
   text-decoration: none;
 }
 
 a::selection{
-  background-color: black;
+  background-color: var(--color-anchor-selection);
 }
 
 a:hover{
-  color: var(--color-yellow-light);
+  color: var(--color-anchor-hover);
   text-decoration: underline;
 }
 
@@ -124,23 +410,26 @@ a:hover{
   font-family: 'Oxygen Mono';
   font-size: 1rem;
   padding: 0.125rem 0.375rem;
-  background-color: black;
-  color: white;
+  background-color: var(--color-key-background);
+  color: var(--color-key-text);
   border-radius: 0.3125rem;
 }
 
 button.defaultButton{
-  background-color: white;
+  background-color: var(--color-background__default-button--default);
   padding: 0.5rem 1.25rem;
   font-size: 0.875rem;
   font-weight: bold;
-  border: 0.125rem solid black;
+  border: 0.125rem solid var(--color-border__default-button--default);
+  color: var(--color-text__default-button--default);
   cursor: pointer;
   transition: all .1s ease-in;
 }
 
 button.defaultButton:hover{
-  background-color: var(--color-yellow-js);
+  background-color: var(--color-background__default-button--hover);
+  color: var(--color-text__default-button--hover);
+  border: 0.125rem solid var(--color-border__default-button--hover);
 }
 
 .hidden{
@@ -149,8 +438,8 @@ button.defaultButton:hover{
 
 
 .label1{
-  background-color: #0B1215;
-  color: var(--color-yellow-main);
+  background-color: var(--color-background__label-1--default);
+  color: var(--color-text__label-1--default);
   font-size: 0.875rem;
   padding: 0.25rem 0.625rem;
   font-weight: 600;
@@ -158,9 +447,33 @@ button.defaultButton:hover{
 }
 
 .yellowBold{
-  color: var(--color-yellow-darker);
+  color: var(--color-text--bold-1);
   font-weight: bold;
   font-size: 0.875rem;
+}
+
+/* Tabs Component */
+.tabRounded{
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: var(--color-text__tab-rounded);
+  padding: 0.4375rem 1rem;
+  border: 0.125rem solid var(--color-border__tab-rounded);
+  border-radius: 0.125rem;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.tabRounded:hover{
+  color: var(--color-text__tab-rounded--hover);
+  border: 0.125rem solid var(--color-border__tab-rounded--hover);
+  background-color: var(--color-background__tab-rounded--hover);
+}
+
+.tabRounded.active{
+  background-color: var(--color-background__tab-rounded--active);
+  border: 0.125rem solid var(--color-border__tab-rounded--active);
+  color: var(--color-text__tab-rounded-active);
 }
 
 
@@ -168,7 +481,7 @@ button.defaultButton:hover{
 
 header{
   width: 100%;
-  background-color: var(--color-yellow-js);
+  background-color: var(--color-background__header);
   height: 4.875rem;
 }
 
@@ -203,18 +516,18 @@ header .topNav .navItem a{
   font-size: 0.875rem;
   padding: 0.625rem;
   text-decoration: none;
-  color: black;
+  color: var(--color-text__nav-item__anchor--default);
   transition: all .2s ease-in-out;
 }
 
-header .topNav .navItem.active a{
-  border: 0.125rem solid black;
+.topNav .navItem.active a{
+  border: 0.125rem solid var(--color-text__nav-item__anchor--active);
 }
 
-header .topNav .navItem a:hover{
-  background-color: black;
-  border: 0.125rem solid black;
-  color: white;
+.topNav .navItem a:hover{
+  background-color: var(--color-background__nav-item__anchor--hover);
+  border: 0.125rem solid var(--color-border__nav-item__anchor--hover);
+  color: var(--color-text__nav-item__anchor--hover);
 }
 
 header .topNav i{
@@ -222,10 +535,11 @@ header .topNav i{
   margin: 0 0.5rem;
   cursor: pointer;
   transition: all .1s ease-in;
+  color: var(--color-text__nav-item__icon--default);
 }
 
 header .topNav i:hover{
-  color: white;
+  color: var(--color-text__nav-item__icon--hover);
   font-size: 1.25rem;
 }
 
@@ -238,7 +552,7 @@ header .topNav i:hover{
   top: 0;
   left: 0;
   z-index: 88888;
-  background-color: rgba(12, 12, 12, .3);
+  background-color: var(--color-background__modal--outside-transparency);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -248,10 +562,10 @@ header .topNav i:hover{
 .modalNavigator{
   width: 60vw;
   height: 50vh;
-  background-color: rgba(12, 12, 12, .8);
+  background-color: var(--color-background__modal--inner-transparency);
   backdrop-filter: blur(10px);
   border-radius: 0.625rem;
-  color: white;
+  color: var(--color-text__modal-navigator--default);
   z-index: 99999;
 }
 
@@ -265,18 +579,18 @@ header .topNav i:hover{
 .modalNavigator #modalSearch{
   width: 100%;
   border: none;
-  background-color: rgba(12, 12, 12, .3);
+  background-color: var(--color-background__modal-navigator__search-input);
   padding: 1.25rem 1.25rem;
-  color: var(--color-gray-light3);
+  color: var(--color-text__modal-navigator__search-input)
   font-size: 0.9375rem;
 }
 
 .modalNavigator #modalSearch::placeholder{
-  color: var(--color-gray-light3);
+  color: var(--color-text__modal-navigator__search-input--placeholder)
 }
 
 .modalNavigator #modalSearch:focus{
-  border: 0.0625rem solid black;
+  border: 0.0625rem solid var(--color-border__modal-navigator__search-input--focus);
 }
 
 /* Nav Items */
@@ -287,7 +601,7 @@ header .topNav i:hover{
   cursor: pointer;
 
   &:hover{
-    background-color: rgba(100, 100, 100, .3);
+    background-color: var(--color-background__modal-navigator__modal-nav-item--hover)
   }
 
 }
@@ -301,15 +615,16 @@ header .topNav i:hover{
 
 .hero{
   padding: 3.125rem 10%;
-  background-color: var(--color-yellow-main);
+  background-color: var(--color-background__hero);
   display: flex;
   justify-content: space-between;
+  color: var(--color-text__hero);
 }
 
 .hero .dinamicRoleText{
   max-width: 26.25rem;
-  background-color: black;
-  color: white;
+  background-color: var(--color-background__dinamic-role-text);
+  color: var(--color-text__dinamic-role-text);
   margin: 1.25rem 0;
   padding: 0.625rem 1.25rem;
 }
@@ -323,13 +638,13 @@ header .topNav i:hover{
 
 #dinamicLabel {
   font-weight: bold;
-  color: var(--color-yellow-js);
+  color: var(--color-text__dinamic-label);
   font-size: 1.5rem;
 }
 
 .cursor {
   display: inline-block;
-  background-color: #b0ff95;
+  background-color: var(--color-background__dinamic-role-text__cursor);
   animation: blinker 800ms infinite;
 }
 
@@ -338,9 +653,9 @@ header .topNav i:hover{
 }
 
 @keyframes blinker {
-	0% { background-color: var(--color-yellow-js); }
+	0% { background-color: var(--color-background__dinamic-role-text__cursor--keyframe1); }
 	50% { background-color: transparent; }
-	100% { background-color: var(--color-yellow-js); }
+	100% { background-color: var(--color-background__dinamic-role-text__cursor--keyframe3); }
 }
 
 .hero .commandInfo p{
@@ -355,7 +670,7 @@ header .topNav i:hover{
   transition: all .3s ease;
 
   &:hover{
-    background-color: var(--color-yellow-soft);
+    background-color: var(--color-background__command-info--hover)
   }
 }
 
@@ -381,6 +696,7 @@ header .topNav i:hover{
 .latestsArticles{
   padding-top: 1.875rem ;
   padding-bottom: 5.625rem;
+  background-color: var(--color-background__latests-articles);
 }
 
 .latestsArticles .articlesContainer{
@@ -399,7 +715,7 @@ header .topNav i:hover{
 }
 
 .latestsArticles .blogPost:hover{
-  background-color: var(--color-gray-light);
+  background-color: var(--color-background__blog-post--hover);
 }
 
 .latestsArticles .blogPost h4{
@@ -407,7 +723,7 @@ header .topNav i:hover{
 }
 
 .latestsArticles .blogPost:hover h4{
-  color: var(--color-yellow-darker);
+  color: var(--color-text__blog-post--hover__h4);
 }
 
 .latestsArticles button.loadMoreBtn{
@@ -420,7 +736,7 @@ header .topNav i:hover{
 /*  ABOUT ME  */
 
 .aboutMe{
-  background-color: var(--color-gray-light3);
+  background-color: var(--color-background__about-me);
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
@@ -429,7 +745,7 @@ header .topNav i:hover{
 /*  PROJECTS  */
 
 .projects{
-  background-color: var(--color-gray-light3);
+  background-color: var(--color-background__projects);
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
@@ -452,14 +768,14 @@ header .topNav i:hover{
 }
 
 .projectCard .projectDetails{
-  color: white;
+  color: var(--color-text__project-details);
   position: absolute;
   z-index: 20;
   transform: translateX(100%);
   transition: transform .6s ease;
   height: 100%;
   width: 100%;
-  background-color: var(--color-black-oil);
+  background-color: var(--color-background__project-details);
   padding: 1.25rem;
 }
 
@@ -474,7 +790,7 @@ header .topNav i:hover{
   z-index: 11;
   width: 100%;
   height: 100%;
-  background-color: var(--color-yellow-main);
+  background-color: var(--color-background__project-card--transition);
   transform: translateX(100%);
   transition: all .4s ease-out;
 }
@@ -495,8 +811,8 @@ header .topNav i:hover{
   width: 100%;
   height: 100%;
   margin: 0;
-  color: var(--color-yellow-js);
-  background-color: rgba(12, 12, 12, .7);
+  color: var(--color-text__project-card__h3);
+  background-color: var(--color-background__project-card__h3);
   backdrop-filter: blur(2px);
 }
 
@@ -511,23 +827,21 @@ header .topNav i:hover{
 
 
 
-
-
-
 /*  WORK EXPERIENCE  */
 
 .workExperience{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+  background-color: var(--color-background__experience);
 }
 
 .experienceContainer{
   width: 100%;
   height: auto;
   padding: 1.875rem 1.875rem;
-  background-color: var(--color-black-oil);
-  color: white;
-
+  background-color: var(--color-background__experience-container);
+  color: var(--color-text__experience-container);
+  border: 0.125rem solid var(--color-border__experience-container);
 }
 
 .workExperience .experienceContainer .experienceNav{
@@ -536,35 +850,13 @@ header .topNav i:hover{
   margin-bottom: 1.875rem;
 }
 
-.tabRounded{
-  font-weight: bold;
-  font-size: 0.875rem;
-  color: white;
-  padding: 0.4375rem 1rem;
-  border: 0.125rem solid white;
-  border-radius: 0.125rem;
-  cursor: pointer;
-  transition: all .2s ease;
-}
-
-.tabRounded:hover{
-  color: black;
-  border: 0.125rem solid black;
-  background-color: white;
-}
-
-.tabRounded.active{
-  background-color: var(--color-yellow-main);
-  border: 0.125rem solid black;
-  color: black;
-}
 .experienceContent .experienceRoles{
-  color: var(--color-yellow-main);
+  color: var(--color-text__experience__experience-roles);
   margin: 1.875rem 0;
 }
 
 .experienceContent .experienceRoles span{
-  color: var(--color-yellow-light);
+  color: var(--color-text__experience__experience-roles__span);
 }
 
 .experienceContent .experienceRole{
@@ -579,7 +871,7 @@ header .topNav i:hover{
   left: -1.25rem;
   height: 130%;
   width: 0.125rem;
-  background-color: var(--color-yellow-main);
+  background-color: var(--color-background__experience-role__before);
 }
 
 .experienceContent .experienceRole::after{
@@ -589,9 +881,8 @@ header .topNav i:hover{
   left: -1.5rem;
   width: 0.625rem;
   height: 0.625rem;
-  background-color: var(--color-yellow-main);
+  background-color: var(--color-background__experience-role__after);
   border-radius: 50%;
-
 }
 
 
@@ -601,6 +892,7 @@ header .topNav i:hover{
 .education{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+  background-color: var(--color-background__education);
 }
 
 .education .educationItem{
@@ -627,13 +919,9 @@ header .topNav i:hover{
   left: -1.75rem;
   width: 0.125rem;
   height: 100%;
-  background-color: var(--color-black-night);
+  background-color: var(--color-background__education-item-content__before);
 }
 
-
-/* .educationItem:first-of-type .eduItemContent::before{
-
-} */
 
 .educationItem:last-of-type .eduItemContent::before{
   height: 40%;
@@ -647,7 +935,7 @@ header .topNav i:hover{
   left: -2rem;
   width: 0.625rem;
   height: 0.625rem;
-  background-color: var(--color-black-night);
+  background-color: var(--color-background__education-item-content__after);
   border-radius: 50%;
 }
 
@@ -663,32 +951,32 @@ header .topNav i:hover{
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 4.375rem 4.375rem 4.375rem;
   gap: 1.5625rem;
-  background-color: var(--color-gray-light3);
+  background-color: var(--color-background__social-buttons);
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
 
 .socialButton{
-  background-color: blueviolet;
+  background-color: var(--color-background__social-button);
   border: none;
   padding: 0;
-  color: white;
+  color: var(--color-text__social-button);
   text-align: left;
   position: relative;
   z-index: 4;
-  background-color: transparent;
+  background-color: var(--color-background__social-button);
   cursor: pointer;
 }
 
 .socialButton:hover{
-  background-color: transparent;
+  background-color: var(--color-background__social-button--hover);
 }
 
 .socialButton .socialButtonContent{
   display: block;
   width: 100%;
   height: 100%;
-  background-color: blue;
+  background-color: var(--color-background__social-button-content);
   transition: transform .2s ease;
   padding: 0.9375rem;
 }
@@ -702,7 +990,7 @@ header .topNav i:hover{
   content: '';
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color: var(--color-background__social-button--shadow);
   position: absolute;
   top: 0.625rem;
   left: 0.625rem;
@@ -717,7 +1005,7 @@ header .topNav i:hover{
 }
 
 .socialButton.linkedin .socialButtonContent{
-  background-color: #0B65C2;
+  background-color: var(--color-background__social-button--linkedin);
 }
 
 .socialButton.web{
@@ -728,7 +1016,7 @@ header .topNav i:hover{
 }
 
 .socialButton.web .socialButtonContent{
-  background-color: #5B5D88;
+  background-color: var(--color-background__social-button--web);
 }
 
 .socialButton.github{
@@ -739,7 +1027,7 @@ header .topNav i:hover{
 }
 
 .socialButton.github .socialButtonContent{
-  background-color: #222429;
+  background-color: var(--color-background__social-button--github);
 }
 
 .socialButton.x{
@@ -750,11 +1038,11 @@ header .topNav i:hover{
 }
 
 .socialButton.x .socialButtonContent{
-  background-color: #0C0C0C;
+  background-color: var(--color-background__social-button--x);
 }
 
 .socialButton span{
-  color: white;
+  color: var(--color-text__social-button__span);
   font-weight: bold;
   font-size: 1.5rem;
 }
@@ -775,14 +1063,19 @@ footer{
   text-align: center;
   padding: 1.875rem 10%;
   width: 100%;
-  background-color: var(--color-yellow-soft);
+  background-color: var(--color-background__footer);
 }
 
 footer p{
   font-weight: bold;
   font-size: 0.875rem;
   margin: 1.25rem 0;
+  color: var(--color-text__footer);
 }
+
+
+
+/*  ------ MEDIA QUERIES ------ */
 
 @media screen and ( width <= 850px ) {
   .articlesContainer{
