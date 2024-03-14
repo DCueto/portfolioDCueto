@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark-theme">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,65 +14,62 @@
 </head>
 <body>
   <div class="modal hidden">
-    <nav class="modalNavigator">
-      <input type="text" id="modalSearch" placeholder="Inserta el comando o tu búsqueda" />
-      <div class="modalNavContent">
+    <nav class="modal-navigator">
+      <i class="close-icon fa-solid fa-xmark"></i>
+      <input type="text" id="modal-search" placeholder="Inserta el comando o tu búsqueda" />
+      <div class="modal-nav-content">
+        <h5>NAVIGATION</h5>
         <ul>
-          <li class="modalNavItem">Home</li>
-          <li class="modalNavItem">Blog</li>
-          <li class="modalNavItem">Portfolio</li>
-          <li class="modalNavItem">Contacto</li>
+          <li class="modal-nav-item"><a href="#"><i class="modal-nav-item__icon fa-solid fa-house"></i>HOME</a></li>
+          <li class="modal-nav-item"><a href="#"><i class="modal-nav-item__icon fa-solid fa-book"></i>BLOG</a></li>
+          <li class="modal-nav-item"><a href="#"><i class="modal-nav-item__icon fa-solid fa-folder-open"></i>PORTFOLIO</a></li>
+          <li class="modal-nav-item"><a href="#"><i class="modal-nav-item__icon fa-solid fa-id-card-clip"></i>CONTACTO</a></li>
         </ul>
-        <h5>Blog Posts</h5>
-        <hr>
+        <h5>BLOG</h5>
         <ul>
-          <li class="modalNavItem">Post 1</li>
-          <li class="modalNavItem">Post 2</li>
-          <li class="modalNavItem">Post 3</li>
+          <li class="modal-nav-item"><a href="#"><i class="modal-nav-item__icon fa-solid fa-square-pen"></i>Usar Notion como CMS para tu sitio web</a></li>
+
         </ul>
       </div>
     </nav>
   </div>
 
-  <div class="test">
-
-  </div>
   <header>
-    <nav class="topNav">
+    <nav class="top-nav">
 
       <a href="#">
-        <img src="./assets/images/logo.svg" class="logoDCueto" alt="logo dcueto" />
+        <img src="./assets/images/logo.svg" class="logo-dcueto" alt="logo dcueto" />
       </a>
       
-      <div class="topRightNav">
+      <div class="top-nav__right ">
         <ul>
-          <li class="navItem active"><a href="#">Home</a></li>
-          <li class="navItem"><a href="#">Blog</a></li>
-          <li class="navItem"><a href="#">Portfolio</a></li>
+          <li class="nav-item active"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#">Blog</a></li>
+          <li class="nav-item"><a href="#">Portfolio</a></li>
         </ul>
-        <div class="iconsTopNav">
-          <i class="searchIcon fa-solid fa-magnifying-glass"></i>
-          <i class="shiftModeIcon fa-solid fa-moon"></i>
+        <div class="top-nav__icons">
+          <i class="search-icon fa-solid fa-magnifying-glass"></i>
+          <i class="shift-mode-icon fa-solid fa-moon"></i>
         </div>
       </div>
     </nav>
   </header>
   <section class="hero">
-    <div class="firstColumn">
+    <div class="first-column">
       <h5>Hola, soy</h5>
       <h1>Daniel <br>Cueto</h1>
 
-      <div class="dinamicRoleText">
-        <p>Un <span id="dinamicLabel"></span><span class="cursor">&nbsp;</span></p>
+      <div class="dinamic-role-text">
+        <p>Un <span id="dinamic-label"></span><span class="cursor">&nbsp;</span></p>
       </div>
 
-      <div class="commandInfo">
-        <p>Presiona <i class="commandIcon key">⌘</i> <span class="keyIcon key">B</span> para empezar</p>
+      <div class="command-info">
+        <p>Presiona <i class="command-icon key">⌘</i> <span class="key-icon key">B</span> para empezar</p>
       </div>
     </div>
 
-    <div class="secondColumn">
-      <figure class="heroPicture">
+    <div class="second-column">
+      <figure class="hero-picture">
         <img src="./assets/images/profilePicture.jpg" />
       </figure>
     </div>
@@ -80,35 +77,35 @@
   </section>
 
   <main>
-    <section class="latestsArticles wrap">
+    <section class="latests-articles wrap">
       <h2>Artículos</h2>
-      <div class="articlesContainer">
-        <article class="blogPost">
+      <div class="articles-container">
+        <article class="blog-post">
           <span>18 Oct ‘23</span>
           <h4>Usar Notion como CMS para tu sitio web</h4>
           <p>Aprenderás a usar la plataforma de Notion para poder publicar tus propias entradas sin necesidad de usar un CMS.</p>
         </article>
-        <article class="blogPost">
+        <article class="blog-post">
           <span>18 Oct ‘23</span>
           <h4>Usar Notion como CMS para tu sitio web</h4>
           <p>Aprenderás a usar la plataforma de Notion para poder publicar tus propias entradas sin necesidad de usar un CMS.</p>
         </article>
-        <article class="blogPost">
+        <article class="blog-post">
           <span>18 Oct ‘23</span>
           <h4>Usar Notion como CMS para tu sitio web</h4>
           <p>Aprenderás a usar la plataforma de Notion para poder publicar tus propias entradas sin necesidad de usar un CMS.</p>
         </article>
-        <article class="blogPost">
+        <article class="blog-post">
           <span>18 Oct ‘23</span>
           <h4>Usar Notion como CMS para tu sitio web</h4>
           <p>Aprenderás a usar la plataforma de Notion para poder publicar tus propias entradas sin necesidad de usar un CMS.</p>
         </article>
       </div>
 
-      <button class="loadMoreBtn defaultButton">CARGAR MÁS</button>
+      <button class="load-more-btn default-button">CARGAR MÁS</button>
     </section>
   
-    <section class="aboutMe wrap">
+    <section class="about-me wrap">
       <h2>Sobre Mí</h2>
       <p>Desarrollador web junior con una especialización destacada en la parte frontend y una sólida comprensión de las mejores prácticas de diseño UX/UI. Con casi un año de experiencia profesional en el campo, respaldada por una pasión autodidacta por la programación que se remonta a mis años adolescentes. Mi formación autodidacta en el mundo de la programación me ha proporcionado una base sólida para abordar desafíos técnicos y adaptarme rápidamente a nuevas tecnologías. Anteriormente, también adquirí experiencia en el desarrollo de aplicaciones iOS, lo que me proporcionó una comprensión integral de los estándares de calidad y usabilidad en el desarrollo de software.
       </p>
@@ -116,70 +113,70 @@
   
     <section class="projects wrap">
       <h2>Proyectos</h2>
-      <div class="projectsContainer">
-        <article class="projectCard">
-          <h3 class="projectTitle">SCOREX</h3>
-          <img src="./assets/images/mobdalaImg.jpeg" alt="" class="projectImg">
-          <div class="projectDetails">
+      <div class="projects-container">
+        <article class="project-card">
+          <h3 class="project-title">SCOREX</h3>
+          <img src="./assets/images/mobdalaImg.jpeg" alt="" class="project-img">
+          <div class="project-details">
             <h4>SCOREX</h4>
             <p>Sitio web de clasificación y reseñas de videojuegos</p>
-            <div class="projectTags">
+            <div class="project-tags">
               <span class="tag">React</span>
               <span class="tag">JSON Server</span>
             </div>
           </div>
-          <div class="projectCardTransition"></div>
+          <div class="project-card-transition"></div>
         </article>
-        <article class="projectCard">
-          <h3 class="projectTitle">SCOREX</h3>
-          <img src="./assets/images/mobdalaImg.jpeg" alt="" class="projectImg">
-          <div class="projectDetails">
+        <article class="project-card">
+          <h3 class="project-title">SCOREX</h3>
+          <img src="./assets/images/mobdalaImg.jpeg" alt="" class="project-img">
+          <div class="project-details">
             <h4>SCOREX</h4>
             <p>Sitio web de clasificación y reseñas de videojuegos</p>
-            <div class="projectTags">
+            <div class="project-tags">
               <span class="tag">React</span>
               <span class="tag">JSON Server</span>
             </div>
           </div>
-          <div class="projectCardTransition"></div>
+          <div class="project-card-transition"></div>
         </article>
-        <article class="projectCard">
-          <h3 class="projectTitle">SCOREX</h3>
-          <img src="./assets/images/mobdalaImg.jpeg" alt="" class="projectImg">
-          <div class="projectDetails">
+        <article class="project-card">
+          <h3 class="project-title">SCOREX</h3>
+          <img src="./assets/images/mobdalaImg.jpeg" alt="" class="project-img">
+          <div class="project-details">
             <h4>SCOREX</h4>
             <p>Sitio web de clasificación y reseñas de videojuegos</p>
-            <div class="projectTags">
+            <div class="project-tags">
               <span class="tag">React</span>
               <span class="tag">JSON Server</span>
             </div>
           </div>
-          <div class="projectCardTransition"></div>
+          <div class="project-card-transition"></div>
         </article>
       </div>
     </section>
   
-    <section class="workExperience wrap">
+    <section class="work-experience wrap">
       <h2>Experiencia</h2>
-      <div class="experienceContainer">
-        <nav class="experienceNav">
-          <span class="tabRounded active">Tab 1</span>
-          <span class="tabRounded">Tab 2</span>
-          <span class="tabRounded">Tab 3</span>
+      <div class="experience-container">
+        <nav class="experience-nav">
+          <span class="tab-rounded active">Navitas</span>
+          <span class="tab-rounded">Smartcities Tgn</span>
+          <span class="tab-rounded">Freelancer</span>
         </nav>
-        <article class="experienceContent">
+        <article class="experience-content">
           <h5>NAVITAS</h5>
-          <div class="experienceRoles">
-            <div class="experienceRole">
-              <p class="titleRole">Desarrollador Frontend Jr.</p>
-              <span class="timestampRole">03/2015 - 11/2015</span>
+          <div class="experience-roles">
+            <div class="experience-role">
+              <p class="title-role">Desarrollador Frontend Jr.</p>
+              <span class="date-role">03/2015 - 11/2015</span>
             </div>
-            <div class="experienceRole">
-              <p class="titleRole">Product Designer</p>
-              <span class="dateRole">03/2015 - 11/2015</span>
+            <div class="experience-role">
+              <p class="title-role">Product Designer</p>
+              <span class="date-role">03/2015 - 11/2015</span>
             </div>
           </div>
-          <p class="experienceDescription">Lorem ipsum dolor sit amet consectetur. Mi senectus pharetra vel at ut nunc quam aliquam. Euismod accumsan vitae ornare nibh. Pellentesque euismod etiam elit placerat. Orci sollicitudin diam consectetur feugiat gravida tellus auctor.</p>
+          <p class="experience-description">Lorem ipsum dolor sit amet consectetur. Mi senectus pharetra vel at ut nunc quam aliquam. Euismod accumsan vitae ornare nibh. Pellentesque euismod etiam elit placerat. Orci sollicitudin diam consectetur feugiat gravida tellus auctor.</p>
         </article>
       </div>
 
@@ -187,58 +184,58 @@
 
     <section class="education wrap">
       <h2>Educación</h2>
-      <article class="educationItem">
-        <div class="eduItemData">
-          <span class="eduItemLocation label1">Barcelona</span>
-          <span class="eduItemDate">siempre</span>
+      <article class="education-item">
+        <div class="edu-item-data">
+          <span class="edu-item-location label1">Barcelona</span>
+          <span class="edu-item-date">siempre</span>
         </div>
-        <div class="eduItemContent">
-          <h5 class="eduItemTitle"><span class="yellowBold">Autodidacta</span> — De cada trabajo, curso, compañero/a, libro, artículo, meetup o experiencia</h5>
-          <p class="eduItemDescription">Así es cómo he aprendido el 80% de lo que sé hoy en día. En este momento estoy aprendiendo: <span>#ReactTestingLibrary</span> <span>#Performance</span> <span>#DesignSystems</span></p>
+        <div class="edu-item-content">
+          <h5 class="edu-item-title"><span class="yellow-bold">Autodidacta</span> — De cada trabajo, curso, compañero/a, libro, artículo, meetup o experiencia</h5>
+          <p class="edu-item-description">Así es cómo he aprendido el 80% de lo que sé hoy en día. En este momento estoy aprendiendo: <span>#ReactTestingLibrary</span> <span>#Performance</span> <span>#DesignSystems</span></p>
         </div>
       </article>
-      <article class="educationItem">
-        <div class="eduItemData">
-          <span class="eduItemLocation label1">Barcelona</span>
-          <span class="eduItemDate">03/24 - actualmente</span>
+      <article class="education-item">
+        <div class="edu-item-data">
+          <span class="edu-item-location label1">Barcelona</span>
+          <span class="edu-item-date">03/24 - actualmente</span>
         </div>
-        <div class="eduItemContent">
-          <h5 class="eduItemTitle"><span class="yellowBold">Autodidacta</span> — De cada trabajo, curso, compañero/a, libro, artículo, meetup o experiencia</h5>
-          <p class="eduItemDescription">Así es cómo he aprendido el 80% de lo que sé hoy en día. En este momento estoy aprendiendo: <span>#ReactTestingLibrary</span> <span>#Performance</span> <span>#DesignSystems</span></p>
+        <div class="edu-item-content">
+          <h5 class="edu-item-title"><span class="yellow-bold">Autodidacta</span> — De cada trabajo, curso, compañero/a, libro, artículo, meetup o experiencia</h5>
+          <p class="edu-item-description">Así es cómo he aprendido el 80% de lo que sé hoy en día. En este momento estoy aprendiendo: <span>#ReactTestingLibrary</span> <span>#Performance</span> <span>#DesignSystems</span></p>
         </div>
       </article>
     </section>
   </main>
 
   <aside>
-    <section class="socialButtons wrap">
-      <button class="socialButton linkedin">
-        <a class="socialButtonContent">
-          <span class="socialButtonText">LinkedIn</span>
-          <i class="socialButtonArrow"></i>
+    <section class="social-buttons wrap">
+      <button class="social-button linkedin">
+        <a class="social-button-content">
+          <span class="social-button-text">LinkedIn</span>
+          <i class="social-button-arrow"></i>
         </a>
       </button>
-      <button class="socialButton web">
-        <a class="socialButtonContent">
-          <span class="socialButtonText">Dev.io</span>
-          <i class="socialButtonArrow"></i>
+      <button class="social-button web">
+        <a class="social-button-content">
+          <span class="social-button-text">Dev.io</span>
+          <i class="social-button-arrow"></i>
         </a>
       </button>
-      <button class="socialButton github">
-        <a class="socialButtonContent">
-          <span class="socialButtonText">Github</span>
-          <i class="socialButtonArrow"></i>
+      <button class="social-button github">
+        <a class="social-button-content">
+          <span class="social-button-text">Github</span>
+          <i class="social-button-arrow"></i>
         </a>
       </button>
-      <button class="socialButton x">
-        <a class="socialButtonContent">
-          <span class="socialButtonText">X</span>
-          <i class="socialButtonArrow"></i>
+      <button class="social-button x">
+        <a class="social-button-content">
+          <span class="social-button-text">X</span>
+          <i class="social-button-arrow"></i>
         </a>
       </button>
     </section>
   
-    <section class="contactMe wrap">
+    <section class="contact-me wrap">
   
     </section>
   </aside>

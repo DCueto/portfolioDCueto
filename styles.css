@@ -5,7 +5,7 @@
 }
 
 /*  VARIABLES  */
-
+/*#region THEMES */
 :root{
 
   /*  Colors  */
@@ -88,7 +88,7 @@
   /*  Modal Colors  */
   
   --color-background__modal--outside-transparency: rgba(12, 12, 12, .3);
-  --color-background__modal--inner-transparency: rgba(12, 12, 12, .8);
+  --color-background__modal--inner-transparency: rgba(29, 26, 30, .9);
   --color-text__modal-navigator--default: white;
   --color-text__modal-navigator__search-input: var(--color-gray-light3);
   --color-text__modal-navigator__search-input--placeholder: var(--color-gray-light3);
@@ -174,9 +174,6 @@
 /* -----------  DARK MODE ------------ */
 
 :root.dark-theme{
-  /* --main-brand-color: #FFF643;
-  --secondary-brand-color: #F7DF1E; */
-
   /*  Element Variables  */
 
   --color-h2-underline: white;
@@ -232,10 +229,10 @@
   /*  Modal Colors  */
   
   --color-background__modal--outside-transparency: rgba(12, 12, 12, .3);
-  --color-background__modal--inner-transparency: rgba(12, 12, 12, .8);
+  --color-background__modal--inner-transparency: rgba(29, 26, 30, .9);
   --color-text__modal-navigator--default: white;
-  --color-text__modal-navigator__search-input: var(--color-gray-light3);
-  --color-text__modal-navigator__search-input--placeholder: var(--color-gray-light3);
+  --color-text__modal-navigator__search-input: rgb(217, 209, 209);
+  --color-text__modal-navigator__search-input--placeholder: rgb(155, 172, 176);
   --color-background__modal-navigator__search-input: rgba(12, 12, 12, .3);
   --color-border__modal-navigator__search-input--focus: black;
   --color-background__modal-navigator__modal-nav-item--hover: rgba(100, 100, 100, .3);
@@ -315,12 +312,582 @@
   --color-text__footer: black;
 }
 
+
+/*#region MEDIA QUERY - THEME COLORS  */
+
+@media ( prefers-color-scheme: dark ) {
+  :root{
+    /*  Element Variables  */
+
+    --color-h2-underline: white;
+    --color-text-selection: var(--color-yellow-js);
+    --color-span-default: var(--color-gray-light3);
+    --color-anchor-default: var(--color-yellow-darker);
+    --color-anchor-selection: black;
+    --color-anchor-hover: var(--color-yellow-light);
+    --color-text__default: white;
+    --color-text--bold-1: var(--color-yellow-js);
+
+    /*  Key Component  */
+    --color-key-background: black;
+    --color-key-text: white;
+
+    /* Default Button Component */
+    --color-background__default-button--default: black;
+    --color-text__default-button--default: white;
+    --color-border__default-button--default: white;
+    --color-background__default-button--hover: var(--color-yellow-js);
+    --color-text__default-button--hover: black;
+    --color-border__default-button--hover: black;
+
+    /* Label 1 Component */
+    --color-background__label-1--default: var(--color-yellow-main);
+    --color-text__label-1--default: var(--color-black-oil);
+
+    /* Tabs Component */
+
+    --color-text__tab-rounded: white;
+    --color-border__tab-rounded: white;
+    --color-text__tab-rounded--hover: black;
+    --color-border__tab-rounded--hover: black;
+    --color-background__tab-rounded--hover: white;
+    --color-background__tab-rounded--active: var(--color-yellow-main);
+    --color-border__tab-rounded--active: black;
+    --color-text__tab-rounded-active: black;
+
+
+    /*  Header Colors  */
+
+    --color-background__header: var(--color-yellow-js);
+
+    --color-text__nav-item__anchor--active: black;
+    --color-text__nav-item__anchor--default: black;
+    --color-border__nav-item__anchor--hover: black;
+    --color-background__nav-item__anchor--hover: black;
+    --color-text__nav-item__anchor--hover: white;
+
+    --color-text__nav-item__icon--default: black;
+    --color-text__nav-item__icon--hover: white;
+
+    /*  Modal Colors  */
+    
+    --color-background__modal--outside-transparency: rgba(12, 12, 12, .3);
+    --color-background__modal--inner-transparency: rgba(12, 12, 12, .8);
+    --color-text__modal-navigator--default: white;
+    --color-text__modal-navigator__search-input: var(--color-gray-light3);
+    --color-text__modal-navigator__search-input--placeholder: var(--color-gray-light3);
+    --color-background__modal-navigator__search-input: rgba(12, 12, 12, .3);
+    --color-border__modal-navigator__search-input--focus: black;
+    --color-background__modal-navigator__modal-nav-item--hover: rgba(100, 100, 100, .3);
+
+    /*  Hero Colors  */
+
+    --color-background__hero: var(--color-yellow-main);
+    --color-text__hero: black;
+    --color-background__dinamic-role-text: black;
+    --color-text__dinamic-role-text: white;
+    --color-text__dinamic-label: var(--color-yellow-js);
+    --color-background__dinamic-role-text__cursor: #b0ff95;
+
+    --color-background__dinamic-role-text__cursor--keyframe1: var(--color-yellow-js);
+    --color-background__dinamic-role-text__cursor--keyframe2: transparent;
+    --color-background__dinamic-role-text__cursor--keyframe3: var(--color-yellow-js);
+
+    --color-background__command-info--hover: #F4DC1B;
+
+
+    /*  Latests Articles Colors  */
+
+    --color-background__latests-articles: var(--color-black-obsidian);
+    --color-background__blog-post--hover: var(--color-gray-dark);
+    --color-text__blog-post--hover__h4: var(--color-yellow-darker);
+
+
+    /*  About Me / Projects Colors  */
+
+    --color-background__about-me: var(--color-gray-dark);
+    --color-background__projects: var(--color-gray-dark);
+    --color-text__project-details: white;
+    --color-background__project-details: var(--color-black-oil);
+    --color-background__project-card--transition: var(--color-yellow-main);
+    --color-text__project-card__h3: var(--color-yellow-js);
+    --color-background__project-card__h3: rgba(12, 12, 12, .7);
+
+
+    /*  Experience Colors  */
+
+    --color-background__experience: var(--color-black-oil);
+    --color-background__experience-container: var(--color-black-oil);
+    --color-border__experience-container: white;
+    --color-text__experience-container: white;
+    --color-text__experience__experience-roles: var(--color-yellow-main);
+    --color-text__experience__experience-roles__span: var(--color-yellow-light);
+    --color-background__experience-role__before: var(--color-yellow-main);
+    --color-background__experience-role__after: var(--color-yellow-main);
+
+
+    /*  Education Colors  */
+
+    --color-background__education: var(--color-black-oil);
+    --color-background__education-item-content__after: var(--color-yellow-main);
+    --color-background__education-item-content__before: var(--color-yellow-main);
+
+
+    /*  Social Buttons  */
+
+    --color-background__social-buttons: var(--color-gray-dark);
+    --color-background__social-button: blueviolet;
+    --color-text__social-button: white;
+    --color-background__social-button: transparent;
+    --color-background__social-button--hover: transparent;
+    --color-background__social-button-content: blue;
+    --color-background__social-button--shadow: black;
+    --color-background__social-button--linkedin: #0B65C2;
+    --color-background__social-button--web: #5B5D88;
+    --color-background__social-button--github: #222429;
+    --color-background__social-button--x: #0C0C0C;
+    --color-text__social-button__span: white;
+
+
+    /*  Footer  */
+
+    --color-background__footer: var(--color-yellow-main);
+    --color-text__footer: black;
+  }
+
+  :root.light-theme{
+    /*  Element Variables  */
+
+    --color-h2-underline: black;
+    --color-text-selection: var(--color-yellow-js);
+    --color-span-default: var(--color-gray-brownie);
+    --color-anchor-default: var(--color-yellow-darker);
+    --color-anchor-selection: black;
+    --color-anchor-hover: var(--color-yellow-light);
+    --color-text__default: black;
+    --color-text--bold-1: var(--color-yellow-darker);
+
+    /*  Key Component  */
+    --color-key-background: black;
+    --color-key-text: white;
+
+    /* Default Button Component */
+    --color-background__default-button--default: white;
+    --color-text__default-button--default: black;
+    --color-border__default-button--default: black;
+    --color-background__default-button--hover: var(--color-yellow-js);
+    --color-text__default-button--hover: black;
+    --color-border__default-button--hover: black;
+
+    /* Label 1 Component */
+    --color-background__label-1--default: #0B1215;
+    --color-text__label-1--default: var(--color-yellow-main);
+
+    /* Tabs Component */
+
+    --color-text__tab-rounded: white;
+    --color-border__tab-rounded: white;
+    --color-text__tab-rounded--hover: black;
+    --color-border__tab-rounded--hover: black;
+    --color-background__tab-rounded--hover: white;
+    --color-background__tab-rounded--active: var(--color-yellow-main);
+    --color-border__tab-rounded--active: black;
+    --color-text__tab-rounded-active: black;
+
+
+    /*  Header Colors  */
+
+    --color-background__header: var(--color-yellow-js);
+
+    --color-text__nav-item__anchor--active: black;
+    --color-text__nav-item__anchor--default: black;
+    --color-border__nav-item__anchor--hover: black;
+    --color-background__nav-item__anchor--hover: black;
+    --color-text__nav-item__anchor--hover: white;
+
+    --color-text__nav-item__icon--default: black;
+    --color-text__nav-item__icon--hover: white;
+
+    /*  Modal Colors  */
+    
+    --color-background__modal--outside-transparency: rgba(12, 12, 12, .3);
+    --color-background__modal--inner-transparency: rgba(12, 12, 12, .8);
+    --color-text__modal-navigator--default: white;
+    --color-text__modal-navigator__search-input: var(--color-gray-light3);
+    --color-text__modal-navigator__search-input--placeholder: var(--color-gray-light3);
+    --color-background__modal-navigator__search-input: rgba(12, 12, 12, .3);
+    --color-border__modal-navigator__search-input--focus: black;
+    --color-background__modal-navigator__modal-nav-item--hover: rgba(100, 100, 100, .3);
+
+    /*  Hero Colors  */
+
+    --color-background__hero: var(--color-yellow-main);
+    --color-text__hero: black;
+    --color-background__dinamic-role-text: black;
+    --color-text__dinamic-role-text: white;
+    --color-text__dinamic-label: var(--color-yellow-js);
+    --color-background__dinamic-role-text__cursor: #b0ff95;
+
+    --color-background__dinamic-role-text__cursor--keyframe1: var(--color-yellow-js);
+    --color-background__dinamic-role-text__cursor--keyframe2: transparent;
+    --color-background__dinamic-role-text__cursor--keyframe3: var(--color-yellow-js);
+
+    --color-background__command-info--hover: var(--color-yellow-soft);
+
+
+    /*  Latests Articles Colors  */
+
+    --color-background__latests-articles: white;
+    --color-background__blog-post--hover: var(--color-gray-light);
+    --color-text__blog-post--hover__h4: var(--color-yellow-darker);
+
+
+    /*  About Me / Projects Colors  */
+
+    --color-background__about-me: var(--color-gray-light3);
+    --color-background__projects: var(--color-gray-light3);
+    --color-text__project-details: white;
+    --color-background__project-details: var(--color-black-oil);
+    --color-background__project-card--transition: var(--color-yellow-main);
+    --color-text__project-card__h3: var(--color-yellow-js);
+    --color-background__project-card__h3: rgba(12, 12, 12, .7);
+
+
+    /*  Experience Colors  */
+
+    --color-background__experience-container: var(--color-black-oil);
+    --color-background__experience: white;
+    --color-border__experience-container: none;
+    --color-text__experience-container: white;
+    --color-text__experience__experience-roles: var(--color-yellow-main);
+    --color-text__experience__experience-roles__span: var(--color-yellow-light);
+    --color-background__experience-role__before: var(--color-yellow-main);
+    --color-background__experience-role__after: var(--color-yellow-main);
+
+
+    /*  Education Colors  */
+
+    --color-background__education: white;
+    --color-background__education-item-content__after: var(--color-black-night);
+    --color-background__education-item-content__before: var(--color-black-night);
+
+
+    /*  Social Buttons  */
+
+    --color-background__social-buttons: var(--color-gray-light3);
+    --color-background__social-button: blueviolet;
+    --color-text__social-button: white;
+    --color-background__social-button: transparent;
+    --color-background__social-button--hover: transparent;
+    --color-background__social-button-content: blue;
+    --color-background__social-button--shadow: black;
+    --color-background__social-button--linkedin: #0B65C2;
+    --color-background__social-button--web: #5B5D88;
+    --color-background__social-button--github: #222429;
+    --color-background__social-button--x: #0C0C0C;
+    --color-text__social-button__span: white;
+
+
+    /*  Footer  */
+
+    --color-background__footer: var(--color-yellow-soft);
+    --color-text__footer: black;
+  }
+}
+
+
+@media ( prefers-color-scheme: light ) {
+  :root{
+    /*  Element Variables  */
+
+    --color-h2-underline: black;
+    --color-text-selection: var(--color-yellow-js);
+    --color-span-default: var(--color-gray-brownie);
+    --color-anchor-default: var(--color-yellow-darker);
+    --color-anchor-selection: black;
+    --color-anchor-hover: var(--color-yellow-light);
+    --color-text__default: black;
+    --color-text--bold-1: var(--color-yellow-darker);
+
+    /*  Key Component  */
+    --color-key-background: black;
+    --color-key-text: white;
+
+    /* Default Button Component */
+    --color-background__default-button--default: white;
+    --color-text__default-button--default: black;
+    --color-border__default-button--default: black;
+    --color-background__default-button--hover: var(--color-yellow-js);
+    --color-text__default-button--hover: black;
+    --color-border__default-button--hover: black;
+
+    /* Label 1 Component */
+    --color-background__label-1--default: #0B1215;
+    --color-text__label-1--default: var(--color-yellow-main);
+
+    /* Tabs Component */
+
+    --color-text__tab-rounded: white;
+    --color-border__tab-rounded: white;
+    --color-text__tab-rounded--hover: black;
+    --color-border__tab-rounded--hover: black;
+    --color-background__tab-rounded--hover: white;
+    --color-background__tab-rounded--active: var(--color-yellow-main);
+    --color-border__tab-rounded--active: black;
+    --color-text__tab-rounded-active: black;
+
+
+    /*  Header Colors  */
+
+    --color-background__header: var(--color-yellow-js);
+
+    --color-text__nav-item__anchor--active: black;
+    --color-text__nav-item__anchor--default: black;
+    --color-border__nav-item__anchor--hover: black;
+    --color-background__nav-item__anchor--hover: black;
+    --color-text__nav-item__anchor--hover: white;
+
+    --color-text__nav-item__icon--default: black;
+    --color-text__nav-item__icon--hover: white;
+
+    /*  Modal Colors  */
+    
+    --color-background__modal--outside-transparency: rgba(12, 12, 12, .3);
+    --color-background__modal--inner-transparency: rgba(12, 12, 12, .8);
+    --color-text__modal-navigator--default: white;
+    --color-text__modal-navigator__search-input: var(--color-gray-light3);
+    --color-text__modal-navigator__search-input--placeholder: var(--color-gray-light3);
+    --color-background__modal-navigator__search-input: rgba(12, 12, 12, .3);
+    --color-border__modal-navigator__search-input--focus: black;
+    --color-background__modal-navigator__modal-nav-item--hover: rgba(100, 100, 100, .3);
+
+    /*  Hero Colors  */
+
+    --color-background__hero: var(--color-yellow-main);
+    --color-text__hero: black;
+    --color-background__dinamic-role-text: black;
+    --color-text__dinamic-role-text: white;
+    --color-text__dinamic-label: var(--color-yellow-js);
+    --color-background__dinamic-role-text__cursor: #b0ff95;
+
+    --color-background__dinamic-role-text__cursor--keyframe1: var(--color-yellow-js);
+    --color-background__dinamic-role-text__cursor--keyframe2: transparent;
+    --color-background__dinamic-role-text__cursor--keyframe3: var(--color-yellow-js);
+
+    --color-background__command-info--hover: var(--color-yellow-soft);
+
+
+    /*  Latests Articles Colors  */
+
+    --color-background__latests-articles: white;
+    --color-background__blog-post--hover: var(--color-gray-light);
+    --color-text__blog-post--hover__h4: var(--color-yellow-darker);
+
+
+    /*  About Me / Projects Colors  */
+
+    --color-background__about-me: var(--color-gray-light3);
+    --color-background__projects: var(--color-gray-light3);
+    --color-text__project-details: white;
+    --color-background__project-details: var(--color-black-oil);
+    --color-background__project-card--transition: var(--color-yellow-main);
+    --color-text__project-card__h3: var(--color-yellow-js);
+    --color-background__project-card__h3: rgba(12, 12, 12, .7);
+
+
+    /*  Experience Colors  */
+
+    --color-background__experience-container: var(--color-black-oil);
+    --color-background__experience: white;
+    --color-border__experience-container: none;
+    --color-text__experience-container: white;
+    --color-text__experience__experience-roles: var(--color-yellow-main);
+    --color-text__experience__experience-roles__span: var(--color-yellow-light);
+    --color-background__experience-role__before: var(--color-yellow-main);
+    --color-background__experience-role__after: var(--color-yellow-main);
+
+
+    /*  Education Colors  */
+
+    --color-background__education: white;
+    --color-background__education-item-content__after: var(--color-black-night);
+    --color-background__education-item-content__before: var(--color-black-night);
+
+
+    /*  Social Buttons  */
+
+    --color-background__social-buttons: var(--color-gray-light3);
+    --color-background__social-button: blueviolet;
+    --color-text__social-button: white;
+    --color-background__social-button: transparent;
+    --color-background__social-button--hover: transparent;
+    --color-background__social-button-content: blue;
+    --color-background__social-button--shadow: black;
+    --color-background__social-button--linkedin: #0B65C2;
+    --color-background__social-button--web: #5B5D88;
+    --color-background__social-button--github: #222429;
+    --color-background__social-button--x: #0C0C0C;
+    --color-text__social-button__span: white;
+
+
+    /*  Footer  */
+
+    --color-background__footer: var(--color-yellow-soft);
+    --color-text__footer: black;
+  }
+
+  :root.dark-mode{
+    /*  Element Variables  */
+
+    --color-h2-underline: white;
+    --color-text-selection: var(--color-yellow-js);
+    --color-span-default: var(--color-gray-light3);
+    --color-anchor-default: var(--color-yellow-darker);
+    --color-anchor-selection: black;
+    --color-anchor-hover: var(--color-yellow-light);
+    --color-text__default: white;
+    --color-text--bold-1: var(--color-yellow-js);
+
+    /*  Key Component  */
+    --color-key-background: black;
+    --color-key-text: white;
+
+    /* Default Button Component */
+    --color-background__default-button--default: black;
+    --color-text__default-button--default: white;
+    --color-border__default-button--default: white;
+    --color-background__default-button--hover: var(--color-yellow-js);
+    --color-text__default-button--hover: black;
+    --color-border__default-button--hover: black;
+
+    /* Label 1 Component */
+    --color-background__label-1--default: var(--color-yellow-main);
+    --color-text__label-1--default: var(--color-black-oil);
+
+    /* Tabs Component */
+
+    --color-text__tab-rounded: white;
+    --color-border__tab-rounded: white;
+    --color-text__tab-rounded--hover: black;
+    --color-border__tab-rounded--hover: black;
+    --color-background__tab-rounded--hover: white;
+    --color-background__tab-rounded--active: var(--color-yellow-main);
+    --color-border__tab-rounded--active: black;
+    --color-text__tab-rounded-active: black;
+
+
+    /*  Header Colors  */
+
+    --color-background__header: var(--color-yellow-js);
+
+    --color-text__nav-item__anchor--active: black;
+    --color-text__nav-item__anchor--default: black;
+    --color-border__nav-item__anchor--hover: black;
+    --color-background__nav-item__anchor--hover: black;
+    --color-text__nav-item__anchor--hover: white;
+
+    --color-text__nav-item__icon--default: black;
+    --color-text__nav-item__icon--hover: white;
+
+    /*  Modal Colors  */
+    
+    --color-background__modal--outside-transparency: rgba(12, 12, 12, .3);
+    --color-background__modal--inner-transparency: rgba(12, 12, 12, .8);
+    --color-text__modal-navigator--default: white;
+    --color-text__modal-navigator__search-input: var(--color-gray-light3);
+    --color-text__modal-navigator__search-input--placeholder: var(--color-gray-light3);
+    --color-background__modal-navigator__search-input: rgba(12, 12, 12, .3);
+    --color-border__modal-navigator__search-input--focus: black;
+    --color-background__modal-navigator__modal-nav-item--hover: rgba(100, 100, 100, .3);
+
+    /*  Hero Colors  */
+
+    --color-background__hero: var(--color-yellow-main);
+    --color-text__hero: black;
+    --color-background__dinamic-role-text: black;
+    --color-text__dinamic-role-text: white;
+    --color-text__dinamic-label: var(--color-yellow-js);
+    --color-background__dinamic-role-text__cursor: #b0ff95;
+
+    --color-background__dinamic-role-text__cursor--keyframe1: var(--color-yellow-js);
+    --color-background__dinamic-role-text__cursor--keyframe2: transparent;
+    --color-background__dinamic-role-text__cursor--keyframe3: var(--color-yellow-js);
+
+    --color-background__command-info--hover: #F4DC1B;
+
+
+    /*  Latests Articles Colors  */
+
+    --color-background__latests-articles: var(--color-black-obsidian);
+    --color-background__blog-post--hover: var(--color-gray-dark);
+    --color-text__blog-post--hover__h4: var(--color-yellow-darker);
+
+
+    /*  About Me / Projects Colors  */
+
+    --color-background__about-me: var(--color-gray-dark);
+    --color-background__projects: var(--color-gray-dark);
+    --color-text__project-details: white;
+    --color-background__project-details: var(--color-black-oil);
+    --color-background__project-card--transition: var(--color-yellow-main);
+    --color-text__project-card__h3: var(--color-yellow-js);
+    --color-background__project-card__h3: rgba(12, 12, 12, .7);
+
+
+    /*  Experience Colors  */
+
+    --color-background__experience: var(--color-black-oil);
+    --color-background__experience-container: var(--color-black-oil);
+    --color-border__experience-container: white;
+    --color-text__experience-container: white;
+    --color-text__experience__experience-roles: var(--color-yellow-main);
+    --color-text__experience__experience-roles__span: var(--color-yellow-light);
+    --color-background__experience-role__before: var(--color-yellow-main);
+    --color-background__experience-role__after: var(--color-yellow-main);
+
+
+    /*  Education Colors  */
+
+    --color-background__education: var(--color-black-oil);
+    --color-background__education-item-content__after: var(--color-yellow-main);
+    --color-background__education-item-content__before: var(--color-yellow-main);
+
+
+    /*  Social Buttons  */
+
+    --color-background__social-buttons: var(--color-gray-dark);
+    --color-background__social-button: blueviolet;
+    --color-text__social-button: white;
+    --color-background__social-button: transparent;
+    --color-background__social-button--hover: transparent;
+    --color-background__social-button-content: blue;
+    --color-background__social-button--shadow: black;
+    --color-background__social-button--linkedin: #0B65C2;
+    --color-background__social-button--web: #5B5D88;
+    --color-background__social-button--github: #222429;
+    --color-background__social-button--x: #0C0C0C;
+    --color-text__social-button__span: white;
+
+
+    /*  Footer  */
+
+    --color-background__footer: var(--color-yellow-main);
+    --color-text__footer: black;
+  }
+}
+
+/*#endregion*/
+
+/*#endregion */
+
+
 html{
   font-family: 'Source Code Pro', 'Oxygen Mono', 'Oxygen', 'sans-serif';
   font-size: 16px;
   color: var(--color-text__default);
 }
 
+/*#region GENERAL STYLES */
 h1{
   font-size: 4rem;
   font-weight: bold;
@@ -406,6 +973,22 @@ a:hover{
   /* max-width: 1200px; */
 }
 
+.hidden{
+  display: none !important;
+}
+
+.yellow-bold{
+  color: var(--color-text--bold-1);
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+
+/*#endregion*/
+
+
+/*#region COMPONENTS STYLES */
+
 .key{
   font-family: 'Oxygen Mono';
   font-size: 1rem;
@@ -415,7 +998,7 @@ a:hover{
   border-radius: 0.3125rem;
 }
 
-button.defaultButton{
+button.default-button{
   background-color: var(--color-background__default-button--default);
   padding: 0.5rem 1.25rem;
   font-size: 0.875rem;
@@ -426,14 +1009,10 @@ button.defaultButton{
   transition: all .1s ease-in;
 }
 
-button.defaultButton:hover{
+button.default-button:hover{
   background-color: var(--color-background__default-button--hover);
   color: var(--color-text__default-button--hover);
   border: 0.125rem solid var(--color-border__default-button--hover);
-}
-
-.hidden{
-  display: none !important;
 }
 
 
@@ -446,14 +1025,8 @@ button.defaultButton:hover{
   width: fit-content;
 }
 
-.yellowBold{
-  color: var(--color-text--bold-1);
-  font-weight: bold;
-  font-size: 0.875rem;
-}
-
 /* Tabs Component */
-.tabRounded{
+.tab-rounded{
   font-weight: bold;
   font-size: 0.875rem;
   color: var(--color-text__tab-rounded);
@@ -464,20 +1037,23 @@ button.defaultButton:hover{
   transition: all .2s ease;
 }
 
-.tabRounded:hover{
+.tab-rounded:hover{
   color: var(--color-text__tab-rounded--hover);
   border: 0.125rem solid var(--color-border__tab-rounded--hover);
   background-color: var(--color-background__tab-rounded--hover);
 }
 
-.tabRounded.active{
+.tab-rounded.active{
   background-color: var(--color-background__tab-rounded--active);
   border: 0.125rem solid var(--color-border__tab-rounded--active);
   color: var(--color-text__tab-rounded-active);
 }
 
+/*#endregion */
 
-/* HEADER */
+
+
+/*#region HEADER */
 
 header{
   width: 100%;
@@ -485,7 +1061,7 @@ header{
   height: 4.875rem;
 }
 
-header .topNav{
+header .top-nav{
   margin: 0 auto;
   padding: 0 10%;
   width: 100%;
@@ -496,23 +1072,23 @@ header .topNav{
   align-items: center;
 }
 
-header .topNav .logoDCueto, header .topNav a{
+header .top-nav .logo-dcueto, header .top-nav a{
   height: 96%;
 }
 
-header .topNav .topRightNav{
+header .top-nav .top-nav__right{
   display: flex;
   justify-content: space-evenly;
   gap: 0.9375rem;
 }
 
-header .topNav .topRightNav ul{
+header .top-nav .top-nav__right ul{
   display: flex;
   justify-content: space-evenly;
   gap: 0.9375rem;
 }
 
-header .topNav .navItem a{
+header .top-nav .nav-item a{
   font-size: 0.875rem;
   padding: 0.625rem;
   text-decoration: none;
@@ -520,17 +1096,17 @@ header .topNav .navItem a{
   transition: all .2s ease-in-out;
 }
 
-.topNav .navItem.active a{
+.top-nav .nav-item.active a{
   border: 0.125rem solid var(--color-text__nav-item__anchor--active);
 }
 
-.topNav .navItem a:hover{
+.top-nav .nav-item a:hover{
   background-color: var(--color-background__nav-item__anchor--hover);
   border: 0.125rem solid var(--color-border__nav-item__anchor--hover);
   color: var(--color-text__nav-item__anchor--hover);
 }
 
-header .topNav i{
+header .top-nav i{
   font-size: 1.25rem;
   margin: 0 0.5rem;
   cursor: pointer;
@@ -538,12 +1114,18 @@ header .topNav i{
   color: var(--color-text__nav-item__icon--default);
 }
 
-header .topNav i:hover{
+header .top-nav i:hover{
   color: var(--color-text__nav-item__icon--hover);
   font-size: 1.25rem;
 }
 
-/*  MODAL NAVIGATOR  */
+/*#endregion*/
+
+/*#region  MODAL NAVIGATOR  */
+
+body:not(:has( > .modal.hidden )){
+  overflow: hidden;
+}
 
 .modal{
   width: 100vw;
@@ -557,61 +1139,103 @@ header .topNav i:hover{
   justify-content: center;
   align-items: center;
   overflow-y: hidden;
+  /* backdrop-filter: blur(1px); */
 }
 
-.modalNavigator{
-  width: 60vw;
-  height: 50vh;
+.modal .close-icon{
+  cursor: pointer;
+  display: none;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+  margin-top: -0.9rem;
+  font-size: 1.2rem;
+}
+
+.modal-navigator{
+  width: 70%;
+  height: 60%;
   background-color: var(--color-background__modal--inner-transparency);
   backdrop-filter: blur(10px);
   border-radius: 0.625rem;
   color: var(--color-text__modal-navigator--default);
-  z-index: 99999;
+  margin-top: -15vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
-.modalNavigator .modalNavContent{
+.modal-navigator .modal-nav-content{
   overflow-y: scroll;
   height: 80%;
 }
 
 /* Search Input */
 
-.modalNavigator #modalSearch{
+.modal-navigator #modal-search{
   width: 100%;
   border: none;
   background-color: var(--color-background__modal-navigator__search-input);
   padding: 1.25rem 1.25rem;
-  color: var(--color-text__modal-navigator__search-input)
-  font-size: 0.9375rem;
+  color: var(--color-text__modal-navigator__search-input);
+  font-size: 1rem;
 }
 
-.modalNavigator #modalSearch::placeholder{
-  color: var(--color-text__modal-navigator__search-input--placeholder)
+.modal-navigator #modal-search::placeholder{
+  color: var(--color-text__modal-navigator__search-input--placeholder);
 }
 
-.modalNavigator #modalSearch:focus{
-  border: 0.0625rem solid var(--color-border__modal-navigator__search-input--focus);
+.modal-navigator #modal-search:focus{
+  outline: none !important;
+  /* border: 0.0625rem solid var(--color-border__modal-navigator__search-input--focus); */
+  box-shadow: inset 0px 0px 5px black;
 }
 
 /* Nav Items */
 
-.modalNavigator .modalNavItem{
+.modal-navigator .modal-nav-item{
   width: 100%;
-  padding: 0.9375rem 0.625rem;
+  padding: 0.9375rem 1.25rem;
   cursor: pointer;
+  /* font-family: var(--font-alt); */
+  border-bottom: 2px solid var(--color-gray-dark);
+  color: #b4c0ca;
+  transition: all .2s ease;
 
   &:hover{
-    background-color: var(--color-background__modal-navigator__modal-nav-item--hover)
+    color: var(--color-gray-light3);
+    background-color: var(--color-background__modal-navigator__modal-nav-item--hover);
+  }
+
+  .modal-nav-item__icon{
+    margin-right: 0.625rem;
+    min-width: 1.5rem;
+  }
+
+  a{
+    color: #b4c0ca;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all .2s ease;
+  }
+
+  &:hover a{
+    color: var(--color-gray-light3);
   }
 
 }
 
-.modalNavigator h5{
-  margin-left: 0.625rem;
+.modal-navigator h5{
+  margin-left: 0.775rem;
+  margin-top: .8rem;
+  font-size: 0.725rem;
+  font-weight: 500;
 }
 
+/*#endregion*/
 
-/*  HERO  */
+
+/*#region  HERO  */
 
 .hero{
   padding: 3.125rem 10%;
@@ -621,7 +1245,7 @@ header .topNav i:hover{
   color: var(--color-text__hero);
 }
 
-.hero .dinamicRoleText{
+.hero .dinamic-role-text{
   max-width: 26.25rem;
   background-color: var(--color-background__dinamic-role-text);
   color: var(--color-text__dinamic-role-text);
@@ -629,14 +1253,14 @@ header .topNav i:hover{
   padding: 0.625rem 1.25rem;
 }
 
-.hero .dinamicRoleText p{
+.hero .dinamic-role-text p{
   text-align: left;
   font-size: 1.5rem;
   font-weight: bold;
   margin: 0;
 }
 
-#dinamicLabel {
+#dinamic-label {
   font-weight: bold;
   color: var(--color-text__dinamic-label);
   font-size: 1.5rem;
@@ -658,12 +1282,12 @@ header .topNav i:hover{
 	100% { background-color: var(--color-background__dinamic-role-text__cursor--keyframe3); }
 }
 
-.hero .commandInfo p{
+.hero .command-info p{
   font-weight: bold;
   font-size: 1.25rem;
 }
 
-.hero .commandInfo{
+.hero .command-info{
   cursor: pointer;
   padding: 0.0625rem 0.625rem;
   border-radius: 0.3125rem;
@@ -674,7 +1298,7 @@ header .topNav i:hover{
   }
 }
 
-.hero .secondColumn{
+.hero .second-column{
   flex-grow: 1;
 }
 
@@ -688,25 +1312,25 @@ header .topNav i:hover{
   border-radius: 50%;
 }
 
+/*#endregion*/
 
 
+/*#region  LATESTS ARTICLES  */
 
-/*  LATESTS ARTICLES  */
-
-.latestsArticles{
+.latests-articles{
   padding-top: 1.875rem ;
   padding-bottom: 5.625rem;
   background-color: var(--color-background__latests-articles);
 }
 
-.latestsArticles .articlesContainer{
+.latests-articles .articles-container{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 3%;
 }
 
-.latestsArticles .blogPost{
+.latests-articles .blog-post{
   max-width: 45%;
   margin: 0.625rem 0;
   padding: 1.25rem;
@@ -714,28 +1338,31 @@ header .topNav i:hover{
   transition: all .3s ease;
 }
 
-.latestsArticles .blogPost:hover{
+.latests-articles .blog-post:hover{
   background-color: var(--color-background__blog-post--hover);
 }
 
-.latestsArticles .blogPost h4{
+.latests-articles .blog-post h4{
   transition: all .3s ease;
 }
 
-.latestsArticles .blogPost:hover h4{
+.latests-articles .blog-post:hover h4{
   color: var(--color-text__blog-post--hover__h4);
 }
 
-.latestsArticles button.loadMoreBtn{
+.latests-articles button.load-more-btn{
   display: block;
   margin: 1.25rem auto 0 auto;
 }
 
+/*#endregion */
 
 
+
+/*#region  ABOUT / PROJECTS */
 /*  ABOUT ME  */
 
-.aboutMe{
+.about-me{
   background-color: var(--color-background__about-me);
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -750,13 +1377,13 @@ header .topNav i:hover{
   padding-bottom: 2.5rem;
 }
 
-.projects .projectsContainer{
+.projects .projects-container{
   display: flex;
   flex-wrap: wrap;
   gap: 3%;
 }
 
-.projects .projectCard{
+.projects .project-card{
   width: auto;
   margin: 0.625rem 0;
   min-width: 300px;
@@ -767,7 +1394,7 @@ header .topNav i:hover{
   cursor: pointer;
 }
 
-.projectCard .projectDetails{
+.project-card .project-details{
   color: var(--color-text__project-details);
   position: absolute;
   z-index: 20;
@@ -779,11 +1406,11 @@ header .topNav i:hover{
   padding: 1.25rem;
 }
 
-.projects .projectCard:hover .projectDetails{
+.projects .project-card:hover .project-details{
   transform: translate(0%);
 }
 
-.projects .projectCard .projectCardTransition{
+.projects .project-card .project-card-transition{
   position: absolute;
   top: 0;
   left: 0;
@@ -795,12 +1422,12 @@ header .topNav i:hover{
   transition: all .4s ease-out;
 }
 
-.projects .projectCard:hover .projectCardTransition{
+.projects .project-card:hover .project-card-transition{
   transform: translate(0%);
 }
 
 
-.projects .projectCard h3{
+.projects .project-card h3{
   position: absolute;
   z-index: 2;
   font-size: 3rem;
@@ -816,7 +1443,7 @@ header .topNav i:hover{
   backdrop-filter: blur(2px);
 }
 
-.projects .projectCard img{
+.projects .project-card img{
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -825,17 +1452,18 @@ header .topNav i:hover{
   left: 0;
 }
 
+/*#endregion */
 
 
-/*  WORK EXPERIENCE  */
+/*#region  WORK EXPERIENCE  */
 
-.workExperience{
+.work-experience{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   background-color: var(--color-background__experience);
 }
 
-.experienceContainer{
+.experience-container{
   width: 100%;
   height: auto;
   padding: 1.875rem 1.875rem;
@@ -844,27 +1472,27 @@ header .topNav i:hover{
   border: 0.125rem solid var(--color-border__experience-container);
 }
 
-.workExperience .experienceContainer .experienceNav{
+.work-experience .experience-container .experience-nav{
   display: flex;
   gap: 1.875rem;
   margin-bottom: 1.875rem;
 }
 
-.experienceContent .experienceRoles{
+.experience-content .experience-roles{
   color: var(--color-text__experience__experience-roles);
   margin: 1.875rem 0;
 }
 
-.experienceContent .experienceRoles span{
+.experience-content .experience-roles span{
   color: var(--color-text__experience__experience-roles__span);
 }
 
-.experienceContent .experienceRole{
+.experience-content .experience-role{
   position: relative;
   margin-left: 1.875rem;
 }
 
-.experienceContent .experienceRole::before{
+.experience-content .experience-role::before{
   content: '';
   position: absolute;
   top: -10%;
@@ -874,7 +1502,7 @@ header .topNav i:hover{
   background-color: var(--color-background__experience-role__before);
 }
 
-.experienceContent .experienceRole::after{
+.experience-content .experience-role::after{
   content: '';
   position: absolute;
   top: 0.625rem;
@@ -885,9 +1513,10 @@ header .topNav i:hover{
   border-radius: 50%;
 }
 
+/*#endregion */
 
 
-/*  EDUCATION  */
+/*#region EDUCATION  */
 
 .education{
   padding-top: 2.5rem;
@@ -895,24 +1524,24 @@ header .topNav i:hover{
   background-color: var(--color-background__education);
 }
 
-.education .educationItem{
+.education .education-item{
   display: flex;
   justify-content: space-between;
 }
 
-.educationItem .eduItemData{
+.education-item .edu-item-data{
   width: fit-content;
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
 }
 
-.educationItem .eduItemContent{
+.education-item .edu-item-content{
   max-width: 80%;
   position: relative;
 }
 
-.educationItem .eduItemContent::before{
+.education-item .edu-item-content::before{
   content: '';
   position: absolute;
   top: 0;
@@ -923,12 +1552,12 @@ header .topNav i:hover{
 }
 
 
-.educationItem:last-of-type .eduItemContent::before{
+.education-item:last-of-type .edu-item-content::before{
   height: 40%;
 }
 
 
-.educationItem .eduItemContent::after{
+.education-item .edu-item-content::after{
   content: '';
   position: absolute;
   top: 0.625rem;
@@ -939,14 +1568,16 @@ header .topNav i:hover{
   border-radius: 50%;
 }
 
-.educationItem .eduItemContent p{
+.education-item .edu-item-content p{
   line-height: 130%;
 }
 
+/*#endregion */
 
-/*   SOCIAL BUTTONS   */
 
-.socialButtons{
+/*#region  SOCIAL BUTTONS   */
+
+.social-buttons{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 4.375rem 4.375rem 4.375rem;
@@ -956,7 +1587,7 @@ header .topNav i:hover{
   padding-bottom: 2.5rem;
 }
 
-.socialButton{
+.social-button{
   background-color: var(--color-background__social-button);
   border: none;
   padding: 0;
@@ -968,11 +1599,11 @@ header .topNav i:hover{
   cursor: pointer;
 }
 
-.socialButton:hover{
+.social-button:hover{
   background-color: var(--color-background__social-button--hover);
 }
 
-.socialButton .socialButtonContent{
+.social-button .social-button-content{
   display: block;
   width: 100%;
   height: 100%;
@@ -981,12 +1612,12 @@ header .topNav i:hover{
   padding: 0.9375rem;
 }
 
-.socialButton .socialButtonContent:hover{
+.social-button .social-button-content:hover{
   transform: translate(0.625rem, 0.625rem);
   text-decoration: none;
 }
 
-.socialButton::after{
+.social-button::after{
   content: '';
   width: 100%;
   height: 100%;
@@ -997,55 +1628,57 @@ header .topNav i:hover{
   z-index: -2;
 }
 
-.socialButton.linkedin{
+.social-button.linkedin{
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 3;
 }
 
-.socialButton.linkedin .socialButtonContent{
+.social-button.linkedin .social-button-content{
   background-color: var(--color-background__social-button--linkedin);
 }
 
-.socialButton.web{
+.social-button.web{
   grid-column-start: 5;
   grid-column-end: 6;
   grid-row-start: 1;
   grid-row-end: 5;
 }
 
-.socialButton.web .socialButtonContent{
+.social-button.web .social-button-content{
   background-color: var(--color-background__social-button--web);
 }
 
-.socialButton.github{
+.social-button.github{
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 5;
 }
 
-.socialButton.github .socialButtonContent{
+.social-button.github .social-button-content{
   background-color: var(--color-background__social-button--github);
 }
 
-.socialButton.x{
+.social-button.x{
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 3;
   grid-row-end: 5;
 }
 
-.socialButton.x .socialButtonContent{
+.social-button.x .social-button-content{
   background-color: var(--color-background__social-button--x);
 }
 
-.socialButton span{
+.social-button span{
   color: var(--color-text__social-button__span);
   font-weight: bold;
   font-size: 1.5rem;
 }
+
+/*#endregion */
 
 
 /*   FORM CONTACT   */
@@ -1056,7 +1689,7 @@ header .topNav i:hover{
 
 
 
-/*  FOOTER  */
+/*#region  FOOTER  */
 
 
 footer{
@@ -1073,25 +1706,27 @@ footer p{
   color: var(--color-text__footer);
 }
 
+/*#endregion  */
 
 
-/*  ------ MEDIA QUERIES ------ */
+
+/*#region  ------ MEDIA QUERIES ------ */
 
 @media screen and ( width <= 850px ) {
-  .articlesContainer{
+  .articles-container{
     flex-direction: column;
   }
 
-  .latestsArticles .blogPost{
+  .latests-articles .blog-post{
     max-width: 100%;
   }
 
-  .education .educationItem{
+  .education .education-item{
     flex-direction: column-reverse;
     padding: 1.25rem 2.1875rem;
   }
 
-  .educationItem .eduItemContent::before{
+  .education-item .edu-item-content::before{
     height: 170%;
   }
 
@@ -1099,8 +1734,21 @@ footer p{
 
 @media screen and ( width <= 750px ) {
 
-  .heroPicture{
+  .hero-picture{
     display: none;
+  }
+
+  .modal-navigator{
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    border-radius: 0;
+    padding: 1rem;
+    padding-top: 2rem;
+  }
+
+  .modal .close-icon{
+    display: flex;
   }
 
 }
@@ -1108,7 +1756,7 @@ footer p{
 
 @media screen and ( width <= 500px ) {
 
-  header .topNav .topRightNav ul{
+  header .top-nav .top-nav__right ul{
     display: none !important;
   }
 
@@ -1141,4 +1789,5 @@ footer p{
   }
 }
 
-/* @media screen and ( width >=  ) */
+/*#endregion */
+
