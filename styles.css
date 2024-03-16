@@ -164,6 +164,13 @@
   --color-background__social-button--x: #0C0C0C;
   --color-text__social-button__span: white;
 
+  /*  Contact Me  */
+
+  --color-background__contact-me: white;
+  --color-text__contact-me: var(--color-black-night);
+  --color-background__contact-form: white;
+  --color-border__contact-form: var(--color-black-night);
+
 
   /*  Footer  */
 
@@ -310,7 +317,17 @@
 
   --color-background__footer: var(--color-yellow-main);
   --color-text__footer: black;
+
+
+  /*  Contact Me  */
+
+  --color-background__contact-me: var(--color-black-night);
+  --color-text__contact-me: white;
+  --color-background__contact-form: var(--color-black-night);
+  --color-border__contact-form: white;
 }
+
+
 
 
 /*#region MEDIA QUERY - THEME COLORS  */
@@ -447,6 +464,14 @@
     --color-background__social-button--github: #222429;
     --color-background__social-button--x: #0C0C0C;
     --color-text__social-button__span: white;
+
+
+    /*  Contact Me  */
+
+    --color-background__contact-me: var(--color-black-night);
+    --color-text__contact-me: white;
+    --color-background__contact-form: var(--color-black-night);
+    --color-border__contact-form: white;
 
 
     /*  Footer  */
@@ -588,10 +613,18 @@
     --color-text__social-button__span: white;
 
 
+    /*  Contact Me  */
+
+    --color-background__contact-me: white;
+    --color-text__contact-me: var(--color-black-night);
+    --color-background__contact-form: white;
+    --color-border__contact-form: var(--color-black-night);
+
     /*  Footer  */
 
     --color-background__footer: var(--color-yellow-soft);
     --color-text__footer: black;
+
   }
 }
 
@@ -728,6 +761,13 @@
     --color-background__social-button--github: #222429;
     --color-background__social-button--x: #0C0C0C;
     --color-text__social-button__span: white;
+
+    /*  Contact Me  */
+
+  --color-background__contact-me: white;
+  --color-text__contact-me: var(--color-black-night);
+  --color-background__contact-form: white;
+  --color-border__contact-form: var(--color-black-night);
 
 
     /*  Footer  */
@@ -868,12 +908,20 @@
     --color-background__social-button--x: #0C0C0C;
     --color-text__social-button__span: white;
 
+    /*  Contact Me  */
+
+    --color-background__contact-me: var(--color-black-night);
+    --color-text__contact-me: white;
+    --color-background__contact-form: var(--color-black-night);
+    --color-border__contact-form: white;
+
 
     /*  Footer  */
 
     --color-background__footer: var(--color-yellow-main);
     --color-text__footer: black;
   }
+
 }
 
 /*#endregion*/
@@ -996,6 +1044,14 @@ a:hover{
   background-color: var(--color-key-background);
   color: var(--color-key-text);
   border-radius: 0.3125rem;
+}
+
+.tag{
+  border: 0.09rem solid white;
+  font-weight: 600;
+  padding: .125rem 0.255rem;
+  border-radius: 0.2rem;
+  color: white;
 }
 
 button.default-button{
@@ -1408,6 +1464,10 @@ body:not(:has( > .modal.hidden )){
 
 .projects .project-card:hover .project-details{
   transform: translate(0%);
+
+  h4{
+    color: var(--color-yellow-js);
+  }
 }
 
 .projects .project-card .project-card-transition{
@@ -1474,6 +1534,7 @@ body:not(:has( > .modal.hidden )){
 
 .work-experience .experience-container .experience-nav{
   display: flex;
+  flex-wrap: wrap;
   gap: 1.875rem;
   margin-bottom: 1.875rem;
 }
@@ -1527,6 +1588,7 @@ body:not(:has( > .modal.hidden )){
 .education .education-item{
   display: flex;
   justify-content: space-between;
+  gap: 10%;
 }
 
 .education-item .edu-item-data{
@@ -1537,7 +1599,7 @@ body:not(:has( > .modal.hidden )){
 }
 
 .education-item .edu-item-content{
-  max-width: 80%;
+  max-width: 75%;
   position: relative;
 }
 
@@ -1683,6 +1745,84 @@ body:not(:has( > .modal.hidden )){
 
 /*   FORM CONTACT   */
 
+.contact-me{
+  background-color: var(--color-background__contact-me);
+  padding-bottom: 2.5rem;
+  padding-top: 2.5rem;
+}
+
+.contact-form{
+  border: 0.0625rem solid var(--color-border__contact-form);
+}
+
+.contact-form .form-content{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--color-background__contact-me);
+}
+
+.form-content input:focus, .form-content textarea:focus{
+  outline: none !important;
+}
+
+.form-content input::placeholder, .form-content textarea::placeholder{
+  color: var(--color-text__contact-me);
+}
+
+.form-content input, .form-content textarea{
+  border: 0.0625rem solid var(--color-border__contact-form);
+  background-color: var(--color-background__contact-me);
+  padding: 0 0.625rem;
+  font-size: 1.25rem;
+  color: var(--color-text__contact-me);
+  font-weight: 500;
+  letter-spacing: -0.04rem;
+}
+
+.form-content input{
+  vertical-align: top;
+  font-family: var(--font-main);
+}
+
+.form-content textarea{
+  padding: 1.25rem 0.625rem;
+}
+
+.form-content #contact-name{
+  width: 45%;
+  height: 6.25rem;
+}
+
+.form-content #contact-email{
+  width: 55%;
+}
+
+.input-subject-container{
+  border: 0.0625rem solid var(--color-border__contact-form);
+  width: 40%;
+}
+
+.form-content #contact-subject{
+  width: 100%;
+  border: none;
+  padding: 1.25rem 0.625rem;
+}
+
+.form-content #contact-message{
+  width: 60%;
+}
+
+.contact-form .form-button-container{
+  border: 0.0625rem solid var(--color-border__contact-form);
+  height: auto;
+}
+
+.form-button-container #contact-submit-button{
+  font-size: 1.3rem;
+  display: block;
+  margin: 1.875rem auto;
+  padding: 1.5rem 2.6rem;
+}
 
 
 
@@ -1726,10 +1866,29 @@ footer p{
     padding: 1.25rem 2.1875rem;
   }
 
+  .education-item .edu-item-content{
+    max-width: none;
+  }
+
   .education-item .edu-item-content::before{
     height: 170%;
   }
 
+}
+
+@media screen and ( width <= 800px ) {
+  .contact-form .form-content{
+    flex-direction: column;
+  }
+
+  .form-content *{
+    width: 100% !important;
+    height: 5rem;
+  }
+
+  .form-content #contact-message{
+    height: 15.625rem;
+  }
 }
 
 @media screen and ( width <= 750px ) {
@@ -1750,6 +1909,35 @@ footer p{
   .modal .close-icon{
     display: flex;
   }
+
+  .social-buttons{
+    grid-template-rows: 4.375rem 4.375rem 4.375rem 4.375rem;
+  }
+
+  .social-button.web{
+    grid-column: 1 / 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  .social-button.linkedin{
+    grid-column: 1 / 6;
+  }
+
+
+  .social-button.github{
+    grid-column: 1 / 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .social-button.x{
+    grid-column: 4 / 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+
 
 }
 
