@@ -629,305 +629,13 @@
 }
 
 
-@media ( prefers-color-scheme: light ) {
-  :root{
-    /*  Element Variables  */
-
-    --color-h2-underline: black;
-    --color-text-selection: var(--color-yellow-js);
-    --color-span-default: var(--color-gray-brownie);
-    --color-anchor-default: var(--color-yellow-darker);
-    --color-anchor-selection: black;
-    --color-anchor-hover: var(--color-yellow-light);
-    --color-text__default: black;
-    --color-text--bold-1: var(--color-yellow-darker);
-
-    /*  Key Component  */
-    --color-key-background: black;
-    --color-key-text: white;
-
-    /* Default Button Component */
-    --color-background__default-button--default: white;
-    --color-text__default-button--default: black;
-    --color-border__default-button--default: black;
-    --color-background__default-button--hover: var(--color-yellow-js);
-    --color-text__default-button--hover: black;
-    --color-border__default-button--hover: black;
-
-    /* Label 1 Component */
-    --color-background__label-1--default: #0B1215;
-    --color-text__label-1--default: var(--color-yellow-main);
-
-    /* Tabs Component */
-
-    --color-text__tab-rounded: white;
-    --color-border__tab-rounded: white;
-    --color-text__tab-rounded--hover: black;
-    --color-border__tab-rounded--hover: black;
-    --color-background__tab-rounded--hover: white;
-    --color-background__tab-rounded--active: var(--color-yellow-main);
-    --color-border__tab-rounded--active: black;
-    --color-text__tab-rounded-active: black;
-
-
-    /*  Header Colors  */
-
-    --color-background__header: var(--color-yellow-js);
-
-    --color-text__nav-item__anchor--active: black;
-    --color-text__nav-item__anchor--default: black;
-    --color-border__nav-item__anchor--hover: black;
-    --color-background__nav-item__anchor--hover: black;
-    --color-text__nav-item__anchor--hover: white;
-
-    --color-text__nav-item__icon--default: black;
-    --color-text__nav-item__icon--hover: white;
-
-    /*  Modal Colors  */
-    
-    --color-background__modal--outside-transparency: rgba(12, 12, 12, .3);
-    --color-background__modal--inner-transparency: rgba(12, 12, 12, .8);
-    --color-text__modal-navigator--default: white;
-    --color-text__modal-navigator__search-input: var(--color-gray-light3);
-    --color-text__modal-navigator__search-input--placeholder: var(--color-gray-light3);
-    --color-background__modal-navigator__search-input: rgba(12, 12, 12, .3);
-    --color-border__modal-navigator__search-input--focus: black;
-    --color-background__modal-navigator__modal-nav-item--hover: rgba(100, 100, 100, .3);
-
-    /*  Hero Colors  */
-
-    --color-background__hero: var(--color-yellow-main);
-    --color-text__hero: black;
-    --color-background__dinamic-role-text: black;
-    --color-text__dinamic-role-text: white;
-    --color-text__dinamic-label: var(--color-yellow-js);
-    --color-background__dinamic-role-text__cursor: #b0ff95;
-
-    --color-background__dinamic-role-text__cursor--keyframe1: var(--color-yellow-js);
-    --color-background__dinamic-role-text__cursor--keyframe2: transparent;
-    --color-background__dinamic-role-text__cursor--keyframe3: var(--color-yellow-js);
-
-    --color-background__command-info--hover: var(--color-yellow-soft);
-
-
-    /*  Latests Articles Colors  */
-
-    --color-background__latests-articles: white;
-    --color-background__blog-post--hover: var(--color-gray-light);
-    --color-text__blog-post--hover__h4: var(--color-yellow-darker);
-
-
-    /*  About Me / Projects Colors  */
-
-    --color-background__about-me: var(--color-gray-light3);
-    --color-background__projects: var(--color-gray-light3);
-    --color-text__project-details: white;
-    --color-background__project-details: var(--color-black-oil);
-    --color-background__project-card--transition: var(--color-yellow-main);
-    --color-text__project-card__h3: var(--color-yellow-js);
-    --color-background__project-card__h3: rgba(12, 12, 12, .7);
-
-
-    /*  Experience Colors  */
-
-    --color-background__experience-container: var(--color-black-oil);
-    --color-background__experience: white;
-    --color-border__experience-container: none;
-    --color-text__experience-container: white;
-    --color-text__experience__experience-roles: var(--color-yellow-main);
-    --color-text__experience__experience-roles__span: var(--color-yellow-light);
-    --color-background__experience-role__before: var(--color-yellow-main);
-    --color-background__experience-role__after: var(--color-yellow-main);
-
-
-    /*  Education Colors  */
-
-    --color-background__education: white;
-    --color-background__education-item-content__after: var(--color-black-night);
-    --color-background__education-item-content__before: var(--color-black-night);
-
-
-    /*  Social Buttons  */
-
-    --color-background__social-buttons: var(--color-gray-light3);
-    --color-background__social-button: blueviolet;
-    --color-text__social-button: white;
-    --color-background__social-button: transparent;
-    --color-background__social-button--hover: transparent;
-    --color-background__social-button-content: blue;
-    --color-background__social-button--shadow: black;
-    --color-background__social-button--linkedin: #0B65C2;
-    --color-background__social-button--web: #5B5D88;
-    --color-background__social-button--github: #222429;
-    --color-background__social-button--x: #0C0C0C;
-    --color-text__social-button__span: white;
-
-    /*  Contact Me  */
-
-  --color-background__contact-me: white;
-  --color-text__contact-me: var(--color-black-night);
-  --color-background__contact-form: white;
-  --color-border__contact-form: var(--color-black-night);
-
-
-    /*  Footer  */
-
-    --color-background__footer: var(--color-yellow-soft);
-    --color-text__footer: black;
-  }
-
-  :root.dark-mode{
-    /*  Element Variables  */
-
-    --color-h2-underline: white;
-    --color-text-selection: var(--color-yellow-js);
-    --color-span-default: var(--color-gray-light3);
-    --color-anchor-default: var(--color-yellow-darker);
-    --color-anchor-selection: black;
-    --color-anchor-hover: var(--color-yellow-light);
-    --color-text__default: white;
-    --color-text--bold-1: var(--color-yellow-js);
-
-    /*  Key Component  */
-    --color-key-background: black;
-    --color-key-text: white;
-
-    /* Default Button Component */
-    --color-background__default-button--default: black;
-    --color-text__default-button--default: white;
-    --color-border__default-button--default: white;
-    --color-background__default-button--hover: var(--color-yellow-js);
-    --color-text__default-button--hover: black;
-    --color-border__default-button--hover: black;
-
-    /* Label 1 Component */
-    --color-background__label-1--default: var(--color-yellow-main);
-    --color-text__label-1--default: var(--color-black-oil);
-
-    /* Tabs Component */
-
-    --color-text__tab-rounded: white;
-    --color-border__tab-rounded: white;
-    --color-text__tab-rounded--hover: black;
-    --color-border__tab-rounded--hover: black;
-    --color-background__tab-rounded--hover: white;
-    --color-background__tab-rounded--active: var(--color-yellow-main);
-    --color-border__tab-rounded--active: black;
-    --color-text__tab-rounded-active: black;
-
-
-    /*  Header Colors  */
-
-    --color-background__header: var(--color-yellow-js);
-
-    --color-text__nav-item__anchor--active: black;
-    --color-text__nav-item__anchor--default: black;
-    --color-border__nav-item__anchor--hover: black;
-    --color-background__nav-item__anchor--hover: black;
-    --color-text__nav-item__anchor--hover: white;
-
-    --color-text__nav-item__icon--default: black;
-    --color-text__nav-item__icon--hover: white;
-
-    /*  Modal Colors  */
-    
-    --color-background__modal--outside-transparency: rgba(12, 12, 12, .3);
-    --color-background__modal--inner-transparency: rgba(12, 12, 12, .8);
-    --color-text__modal-navigator--default: white;
-    --color-text__modal-navigator__search-input: var(--color-gray-light3);
-    --color-text__modal-navigator__search-input--placeholder: var(--color-gray-light3);
-    --color-background__modal-navigator__search-input: rgba(12, 12, 12, .3);
-    --color-border__modal-navigator__search-input--focus: black;
-    --color-background__modal-navigator__modal-nav-item--hover: rgba(100, 100, 100, .3);
-
-    /*  Hero Colors  */
-
-    --color-background__hero: var(--color-yellow-main);
-    --color-text__hero: black;
-    --color-background__dinamic-role-text: black;
-    --color-text__dinamic-role-text: white;
-    --color-text__dinamic-label: var(--color-yellow-js);
-    --color-background__dinamic-role-text__cursor: #b0ff95;
-
-    --color-background__dinamic-role-text__cursor--keyframe1: var(--color-yellow-js);
-    --color-background__dinamic-role-text__cursor--keyframe2: transparent;
-    --color-background__dinamic-role-text__cursor--keyframe3: var(--color-yellow-js);
-
-    --color-background__command-info--hover: #F4DC1B;
-
-
-    /*  Latests Articles Colors  */
-
-    --color-background__latests-articles: var(--color-black-obsidian);
-    --color-background__blog-post--hover: var(--color-gray-dark);
-    --color-text__blog-post--hover__h4: var(--color-yellow-darker);
-
-
-    /*  About Me / Projects Colors  */
-
-    --color-background__about-me: var(--color-gray-dark);
-    --color-background__projects: var(--color-gray-dark);
-    --color-text__project-details: white;
-    --color-background__project-details: var(--color-black-oil);
-    --color-background__project-card--transition: var(--color-yellow-main);
-    --color-text__project-card__h3: var(--color-yellow-js);
-    --color-background__project-card__h3: rgba(12, 12, 12, .7);
-
-
-    /*  Experience Colors  */
-
-    --color-background__experience: var(--color-black-oil);
-    --color-background__experience-container: var(--color-black-oil);
-    --color-border__experience-container: white;
-    --color-text__experience-container: white;
-    --color-text__experience__experience-roles: var(--color-yellow-main);
-    --color-text__experience__experience-roles__span: var(--color-yellow-light);
-    --color-background__experience-role__before: var(--color-yellow-main);
-    --color-background__experience-role__after: var(--color-yellow-main);
-
-
-    /*  Education Colors  */
-
-    --color-background__education: var(--color-black-oil);
-    --color-background__education-item-content__after: var(--color-yellow-main);
-    --color-background__education-item-content__before: var(--color-yellow-main);
-
-
-    /*  Social Buttons  */
-
-    --color-background__social-buttons: var(--color-gray-dark);
-    --color-background__social-button: blueviolet;
-    --color-text__social-button: white;
-    --color-background__social-button: transparent;
-    --color-background__social-button--hover: transparent;
-    --color-background__social-button-content: blue;
-    --color-background__social-button--shadow: black;
-    --color-background__social-button--linkedin: #0B65C2;
-    --color-background__social-button--web: #5B5D88;
-    --color-background__social-button--github: #222429;
-    --color-background__social-button--x: #0C0C0C;
-    --color-text__social-button__span: white;
-
-    /*  Contact Me  */
-
-    --color-background__contact-me: var(--color-black-night);
-    --color-text__contact-me: white;
-    --color-background__contact-form: var(--color-black-night);
-    --color-border__contact-form: white;
-
-
-    /*  Footer  */
-
-    --color-background__footer: var(--color-yellow-main);
-    --color-text__footer: black;
-  }
-
-}
-
 /*#endregion*/
 
 /*#endregion */
 
+
+
+/*#region GENERAL STYLES */
 
 html{
   font-family: 'Source Code Pro', 'Oxygen Mono', 'Oxygen', 'sans-serif';
@@ -935,7 +643,6 @@ html{
   color: var(--color-text__default);
 }
 
-/*#region GENERAL STYLES */
 h1{
   font-size: 4rem;
   font-weight: bold;
@@ -1743,7 +1450,7 @@ body:not(:has( > .modal.hidden )){
 /*#endregion */
 
 
-/*   FORM CONTACT   */
+/*#region   FORM CONTACT   */
 
 .contact-me{
   background-color: var(--color-background__contact-me);
@@ -1824,7 +1531,7 @@ body:not(:has( > .modal.hidden )){
   padding: 1.5rem 2.6rem;
 }
 
-
+/*#endregion */
 
 
 
