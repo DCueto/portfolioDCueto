@@ -1,24 +1,14 @@
 ---
 import ThemeToggler from "./ThemeToggler.astro";
+const logoImage = "/public/images/logo.svg";
 ---
-
-<nav>
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/philosophies">Philosophies</a></li>
-    <li><a href="/beyond-tech">Beyond Technology</a></li>
-    <li><a href="/about">About Us</a></li>
-  </ul>
-  <ThemeToggler />
-</nav>
 
 <header>
   <nav class="top-nav">
 
     <a href="#">
-      <img src="./assets/images/logo.svg" class="logo-dcueto" alt="logo dcueto" />
+      <img src={logoImage} class="logo-dcueto" alt="logo dcueto" />
     </a>
-    
     <div class="top-nav__right ">
       <ul>
         <li class="nav-item active"><a href="#">Home</a></li>
