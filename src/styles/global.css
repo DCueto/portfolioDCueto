@@ -843,6 +843,7 @@ header .top-nav .top-nav__right{
   display: flex;
   justify-content: space-evenly;
   gap: 0.9375rem;
+  align-items: center;
 }
 
 header .top-nav .top-nav__right ul{
@@ -869,6 +870,12 @@ header .top-nav .nav-item a{
   color: var(--color-text__nav-item__anchor--hover);
 }
 
+.top-nav .top-nav__icons {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
 header .top-nav i{
   font-size: 1.25rem;
   margin: 0 0.5rem;
@@ -886,7 +893,7 @@ header .top-nav i:hover{
 
 /*#region  MODAL NAVIGATOR  */
 
-body:not(:has( > .modal.hidden )){
+body:not(:has( .modal.hidden )){
   overflow: hidden;
 }
 
