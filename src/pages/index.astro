@@ -1,18 +1,18 @@
 ---
-import Main from "../layouts/Main.astro";
-import Hero from "../components/Hero.astro";
-import ModalNavigator from "../components/ModalNavigator.astro";
-import LatestsArticles from "../components/LatestsArticles.astro";
-import AboutMe from "../components/AboutMe.astro";
-import Projects from "../components/Projects.astro";
-import WorkExperience from "../components/WorkExperience.astro";
-import Education from "../components/Education.astro";
-import SocialButtons from "../components/SocialButtons.astro";
-import ContactMe from "../components/ContactMe.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+
+import Hero from "@components/portfolio/astro/Hero.astro";
+import LatestsArticles from "@components/portfolio/astro/LatestsArticles.astro";
+import AboutMe from "@components/portfolio/astro/AboutMe.astro";
+import Projects from "@components/portfolio/astro/Projects.astro";
+import WorkExperience from "@components/portfolio/astro/WorkExperience.astro";
+import Education from "@components/portfolio/astro/Education.astro";
+
+import SocialButtons from "@components/shared/astro/SocialButtons.astro";
+import ContactMe from "@components/shared/astro/ContactMe.astro";
 ---
 
-  <Main title="Daniel Cueto">
-		<ModalNavigator></ModalNavigator>
+  <BaseLayout title="dcueto.me | Daniel Cueto">
 		<Hero></Hero>
 		<LatestsArticles></LatestsArticles>
 		<AboutMe></AboutMe>
@@ -24,4 +24,4 @@ import ContactMe from "../components/ContactMe.astro";
 			<SocialButtons></SocialButtons>
 			<ContactMe></ContactMe>
 		</aside>
-	</Main>
+	</BaseLayout>

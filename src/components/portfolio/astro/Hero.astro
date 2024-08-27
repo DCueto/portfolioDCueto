@@ -1,4 +1,5 @@
 ---
+import DynamicText from "@components/shared/astro/DynamicText.astro";
 const profilePicture = 'images/profilePicture.jpg';
 ---
 
@@ -7,9 +8,7 @@ const profilePicture = 'images/profilePicture.jpg';
     <h5>Hola, soy</h5>
     <h1>Daniel <br>Cueto</h1>
 
-    <div class="dinamic-role-text">
-      <p>Un <span id="dinamic-label"></span><span class="cursor">&nbsp;</span></p>
-    </div>
+    <DynamicText />
 
     <div class="command-info">
       <p>Presiona <i class="command-icon key">⌘</i> <span class="key-icon key">B</span> para empezar</p>
