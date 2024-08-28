@@ -1,0 +1,27 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+
+import Hero from "@components/portfolio/astro/Hero.astro";
+import LatestsArticles from "@components/portfolio/astro/LatestsArticles.astro";
+import AboutMe from "@components/portfolio/astro/AboutMe.astro";
+import Projects from "@components/portfolio/astro/Projects.astro";
+import WorkExperience from "@components/portfolio/astro/WorkExperience.astro";
+import Education from "@components/portfolio/astro/Education.astro";
+
+import SocialButtons from "@components/shared/astro/SocialButtons.astro";
+import ContactMe from "@components/shared/astro/ContactMe.astro";
+---
+
+  <BaseLayout title="dcueto.me | Daniel Cueto">
+		<Hero></Hero>
+		<LatestsArticles></LatestsArticles>
+		<AboutMe></AboutMe>
+		<Projects></Projects>
+		<WorkExperience></WorkExperience>
+		<Education></Education>
+	
+		<aside>
+			<SocialButtons></SocialButtons>
+			<ContactMe></ContactMe>
+		</aside>
+	</BaseLayout>
