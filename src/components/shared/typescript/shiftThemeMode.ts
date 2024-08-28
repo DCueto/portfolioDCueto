@@ -7,14 +7,16 @@ function shiftTheme() {
   const LIGHT_THEME = "LIGHT";
   const DARK_THEME = "DARK";
 
+  type ThemeMode = (typeof LIGHT_THEME) | (typeof DARK_THEME);
+
   // const toggle = document.querySelector('.top-nav .shift-mode-icon');
-  const toogle = document.querySelector('button#theme-toggler-button');
+  // const toogle = document.querySelector('button#theme-toggler-button');
   
   const rootEl = document.documentElement;
 
   // gets current saved colour mode or OS colour mode
-  const getInitialColourMode = () => {
-    const currentSavedColourMode = window.localStorage.getItem(COLOUR_MODE);
+  const getInitialColourMode = () : ThemeMode => {
+    const currentSavedColourMode = window.localStorage.getItem(COLOUR_MODE) as ThemeMode;
     if( currentSavedColourMode ){
       return currentSavedColourMode;
     }
@@ -28,7 +30,7 @@ function shiftTheme() {
 
   const initialColourMode = getInitialColourMode();
 
-  const setInitialColourMode = (mode) => {
+  const setInitialColourMode = (mode: ThemeMode) => {
     if (mode === LIGHT_THEME) {
       rootEl.classList.remove(DARK_THEME_CLASS);
     } else {
